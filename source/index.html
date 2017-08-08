@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <div class="content-wrap">
+         <div class="top-block">
+            <div class="header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="header__left">
+                            <div class="header__city">
+                                <span>Ваш город: </span>
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Москва <span class="caret"></span> </a>
+                                  <ul class="dropdown-menu" aria-labelledby="drop1"> 
+                                    <li><a href="#">Санкт-Петербург</a></li> 
+                                    <li><a href="#">Екатеринбург</a>
+                                    </li> 
+                                    <li><a href="#">Владивосток</a></li> 
+                                </ul>
+                                </div>  
+                            </div>
+                            <div class="header__phone">
+                                <span>Звоните нам: </span>
+                                <a href="">8 800 88 800 88</a>
+                            </div>
+                            <div class="header__social">
+                                <a href=""><img src="images/tw.png" alt="twitter"></a>
+                                <a href=""><img src="images/vk.png" alt="vkontakte"></a>
+                                <a href=""><img src="images/fb.png" alt="facebook"></a>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__search">
+                               <i class="icon-search"></i>
+                                <div class="search-input">
+                                    <input type="text" class="form-control" placeholder="Найти.." aria-describedby="basic-addon1">
+                                    <span class="search-close glyphicon glyphicon-remove"></span>
+                                </div>
+                            </div>
+                            <div class="header__login">
+                                <a href="">Войти</a>
+                                <span>и получить скидку</span>
+                            </div>
+                            <a href="" class="header__cart">
+                                <span>99</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-line"></div>
+         </div>
+    </div>
+    @@include('include/footer.html')
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
