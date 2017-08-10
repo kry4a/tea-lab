@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    color: #454444;
 }
 
 .content-wrap {
@@ -16,4 +17,43 @@ body {
 a {
     text-decoration: none;
     transition: all .3s;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #454444;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.price {
+    position: relative;
+    
+    &:after {
+        position: absolute;
+        content: url(../images/ruble-currency-sign.png);
+        width: 19px;
+        height: 21px;
+        right: -25px;
+    }
+}
+
+.block-desc {
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+select.form-control {
+    width: 215px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+@media all and (max-width: 450px) {
+    h2 {
+        font-size: 20px;
+    }
 }

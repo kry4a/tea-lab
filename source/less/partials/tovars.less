@@ -1,0 +1,113 @@
+.form-wrap {
+    display: flex;
+    margin-bottom: 30px;
+    
+    .form-control {
+        margin-right: 10px;
+    }
+}
+
+.goods-row {
+    margin-bottom: 30px;
+}
+
+.goods-item {
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 500px;
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.20);
+    
+    img {
+        max-width: 100%;
+        max-height: 175px;
+        margin-bottom: 17px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        color: #454444;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    small {
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    p {
+        max-width: 225px;
+        align-self: center;
+        text-align: justify;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    &__link {
+        color: #a1bc10;
+        font-style: italic;
+        margin-left: 20px;
+        
+        &:hover {
+            color: #a1bc10;
+        }
+    }
+    
+    &__price-block {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: auto;
+        height: 80px;
+        
+        &:after {
+            position: absolute;
+            content: url(../images/basket2.png);
+            width: 27px;
+            height: 24px;
+            left: 43%;
+            top: 5px;
+        }
+    }
+    
+    &__price {
+        
+        display: flex;
+        align-items: center;
+        width: 85px;
+        height: 35px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #a1bc10;
+        border: 2px solid #a1bc10;
+        border-radius: 20px;
+        margin-right: 48px;
+        
+        span {
+            position: relative;
+            margin-left: 5px;
+        }
+        span:after {
+            position: absolute;
+            content: url(../images/ruble-green.png);
+            width: 11px;
+            height: 11px;
+            right: -15px;
+        }
+    }
+    
+    .goods-sel {
+        width: 95px; 
+        height: 35px;
+        border: 2px solid #959595;
+        border-radius: 20px;
+        color: #959595;
+    }
+    
+}

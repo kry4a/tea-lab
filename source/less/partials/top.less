@@ -1,4 +1,61 @@
 .top-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 820px;
     background: url(../images/top-bg.png) center no-repeat;
+    
+    &__about {
+        color: #fff;
+        text-align: center;
+        margin-top: 125px;
+        h1 {
+            font-size: 61px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            max-width: 780px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px #000, 0 0 1em #000;
+        }
+    }
+    
+    &__advantages {
+        display: flex;
+        justify-content: space-around;
+        height: 120px;
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    
+    img {
+        margin-bottom: 15px;
+    }
+    
+    p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        
+        strong {
+            font-weight: 600;
+        }
+    }
 }

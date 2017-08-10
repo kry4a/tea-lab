@@ -10,8 +10,10 @@
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--[if IE 8]>
@@ -67,6 +69,522 @@
                 </div>
             </div>
             <div class="header-line"></div>
+            <nav class="nav container">
+                <a href="" class="nav-logo"><span>TEA</span><span>LAB</span></a>
+                <ul class="nav-list">
+                    <li class="active"><a href="">Главная</a></li>
+                    <li class="category"><a href="">Каталог</a>
+                        <ul class="nav-submenu category-submenu">
+                            <li class="nav-parent category1"><a href="">Жасминовый чай</a>
+                                <ul class="nav-submenu second-submenu category1-sub">
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-parent category2"><a href="">Зелёный чай</a>
+                                <ul class="nav-submenu second-submenu category2-sub">
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Связанный чай</a></li>
+                            <li><a href="">Белый чай</a></li>
+                            <li><a href="">Желтый чай</a></li>
+                            <li><a href="">Чёрный чай</a></li>
+                            <li><a href="">Улуны</a></li>
+                            <li><a href="">Пуэры</a></li>
+                            <li><a href="">Прочие</a></li>
+                            <li><a href="">Кофе</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Посуда</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Подарки</a></li>
+                    <li><a href="">Новинки</a></li>
+                    <li><a href="">Оптом</a></li>
+                    <li><a href="">О TEALAB</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Прочее</a></li>
+                </ul>
+            </nav>
+            <div class="top-block__about">
+                <h1>«TEA LAB»</h1>
+                <p>Коммерческое предложение - Лучшая цена на чай и чайные смеси от 100 кг В АССОРТИМЕНТЕ</p>
+                <button class="btn btn-lg btn-green">Начать покупки</button>
+            </div>
+            <div class="top-block__advantages container">
+                <div class="advantages-item">
+                    <img src="images/graduate-diploma.png" alt="">
+                    <p><strong>Гарантируем </strong>качество<br> нашей продукци.</p>
+                </div>
+                <div class="advantages-item">
+                    <img src="images/job.png" alt="">
+                    <p>Работаем непокладая рук<br> <strong>Пн-Пт , с 9 до 20.</strong></p>
+                </div>
+                <div class="advantages-item">
+                    <img src="images/travelling-vehicles-of-a-road.png" alt="">
+                    <p>Доставка и оплата товара<br> <strong>24ч, 2 рабочих дня</strong></p>
+                </div>
+                <div class="advantages-item">
+                    <img src="images/box.png" alt="">
+                    <p><strong>104 сорта </strong>чая со всего мира,<br> для вашего наслаждения</p>
+                </div>
+            </div>
+         </div>
+         <div class="tea-tabs">
+           <div class="container">
+               <h2>Создай своё <span>настроение</span></h2>
+               <p class="block-desc">Вы можете сразу купить нужный чай, просто выберете раздел</p>
+               <div class="tea-tabs__buttons">
+                   <a href="#morning" class="btn btn-tab btn-morning">«Утренний» </a>
+                    <a href="#day" class="btn btn-tab btn-day">«Дневной»</a>
+                    <a href="#evening" class="btn btn-tab btn-evening">«Вечерний»</a>
+                    <a href="#night" class="btn btn-tab btn-night">«Ночной»</a>
+               </div>
+                
+                <div class="swiper-container tea-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide tab-item morning">
+                            <div class="tab-item__left">
+                                <img src="images/morning-tea.jpg" alt="">
+                                <div class="tea-point tea-point1"><div class="tick"></div><span>Улучашает</span> кровообращение</div>
+                                <div class="tea-point tea-point2"><div class="tick"></div><span>Полезен</span> сердцу</div>
+                                <div class="tea-point tea-point3"><div class="tick"></div><span>Мягкий</span> на вкус</div>
+                            </div>
+                            <div class="tab-item__right">
+                                <div class="tab-item__caption">
+                                    <p>Утренний</p>
+                                    <img src="images/TEA%20LAB.png" alt="">
+                                </div>
+                                <div class="tab-item__price">
+                                    <p>Стартовая цена от: <span class="price">350.00</span></p>
+                                </div>
+                                <div class="tab-item__desc">
+                                    Утром чаще всего нам необходимо «проснуться», взбодриться и зарядиться приятными эмоциями и витаминами на весь день, поэтому мы подобрали линейку чаев идеально подходящую для начала нового дня, которые дают заряд бодрости и улучшают настроение. 
+                                </div>
+                                <button class="btn btn-lg btn-yellow">Начать покупки</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tab-item day">
+                            <div class="tab-item__left">
+                                <img src="images/morning-tea.jpg" alt="">
+                                <div class="tea-point tea-point1"><div class="tick"></div><span>Улучашает</span> кровообращение</div>
+                                <div class="tea-point tea-point2"><div class="tick"></div><span>Полезен</span> сердцу</div>
+                                <div class="tea-point tea-point3"><div class="tick"></div><span>Мягкий</span> на вкус</div>
+                            </div>
+                            <div class="tab-item__right">
+                                <div class="tab-item__caption">
+                                    <p>Дневной</p>
+                                    <img src="images/TEA%20LAB%202.png" alt="">
+                                </div>
+                                <div class="tab-item__price">
+                                    <p>Стартовая цена от: <span class="price">350.00</span></p>
+                                </div>
+                                <div class="tab-item__desc">
+                                    Днем чаще всего нам необходимо «проснуться», взбодриться и зарядиться приятными эмоциями и витаминами на весь день, поэтому мы подобрали линейку чаев идеально подходящую для начала нового дня, которые дают заряд бодрости и улучшают настроение. 
+                                </div>
+                                <button class="btn btn-lg btn-green">Начать покупки</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tab-item evening">
+                            <div class="tab-item__left">
+                                <img src="images/morning-tea.jpg" alt="">
+                                <div class="tea-point tea-point1"><div class="tick"></div><span>Улучашает</span> кровообращение</div>
+                                <div class="tea-point tea-point2"><div class="tick"></div><span>Полезен</span> сердцу</div>
+                                <div class="tea-point tea-point3"><div class="tick"></div><span>Мягкий</span> на вкус</div>
+                            </div>
+                            <div class="tab-item__right">
+                                <div class="tab-item__caption">
+                                    <p>Вечерний</p>
+                                    <img src="images/TEA%20LAB%203.png" alt="">
+                                </div>
+                                <div class="tab-item__price">
+                                    <p>Стартовая цена от: <span class="price">350.00</span></p>
+                                </div>
+                                <div class="tab-item__desc">
+                                    Вечером чаще всего нам необходимо «проснуться», взбодриться и зарядиться приятными эмоциями и витаминами на весь день, поэтому мы подобрали линейку чаев идеально подходящую для начала нового дня, которые дают заряд бодрости и улучшают настроение. 
+                                </div>
+                                <button class="btn btn-lg btn-red">Начать покупки</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide tab-item night">
+                            <div class="tab-item__left">
+                                <img src="images/morning-tea.jpg" alt="">
+                                <div class="tea-point tea-point1"><div class="tick"></div><span>Улучашает</span> кровообращение</div>
+                                <div class="tea-point tea-point2"><div class="tick"></div><span>Полезен</span> сердцу</div>
+                                <div class="tea-point tea-point3"><div class="tick"></div><span>Мягкий</span> на вкус</div>
+                            </div>
+                            <div class="tab-item__right">
+                                <div class="tab-item__caption">
+                                    <p>Ночной</p>
+                                    <img src="images/TEA%20LAB%204.png" alt="">
+                                </div>
+                                <div class="tab-item__price">
+                                    <p>Стартовая цена от: <span class="price">450.00</span></p>
+                                </div>
+                                <div class="tab-item__desc">
+                                    Ночью чаще всего нам необходимо «проснуться», взбодриться и зарядиться приятными эмоциями и витаминами на весь день, поэтому мы подобрали линейку чаев идеально подходящую для начала нового дня, которые дают заряд бодрости и улучшают настроение. 
+                                </div>
+                                <button class="btn btn-lg btn-blue">Начать покупки</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+           </div>
+         </div>
+         <div class="other-block">
+             <div class="container">
+                 <h2><span>Мы </span>так же предлагаем</h2>
+                 <p class="block-desc">Вы можете посетить нужный вам раздел , кликнув по картинке</p>
+                 <div class="row other-block__row">
+                     <div class="col-md-6 col-xs-12">
+                         <div class="other-item">
+                            <a href="">
+                                <img src="images/other.png" alt="">
+                                 <div class="other-item__caption">
+                                     Посуда
+                                 </div>
+                            </a>
+                         </div>
+                     </div>
+                     <div class="col-md-6 col-xs-12">
+                         <div class="other-item">
+                             <a href="">
+                                <img src="images/other.png" alt="">
+                                 <div class="other-item__caption">
+                                     Опт
+                                 </div>
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row other-block__row">
+                     <div class="col-md-6 col-xs-12">
+                         <div class="other-item">
+                            <a href="">
+                                <img src="images/other.png" alt="">
+                            </a>
+                         </div>
+                     </div>
+                     <div class="col-md-6 col-xs-12">
+                         <div class="other-item">
+                             <a href="">
+                                <img src="images/other.png" alt="">
+                            </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="tea-list-block">
+            <div class="container">
+                <h2><span>Оцените</span> полноту вкуса нашего чая</h2>
+                <p class="block-desc">Перейдите в карточку товара, чтобы узнать о нём больше</p>
+                <div class="form-wrap">
+                    <div class="form-group">
+                        <select class="form-control" id="sel1">
+                            <option value="" selected disabled>Сортировать по цене</option>
+                            <option>По возрастанию</option>
+                            <option>По убыванию</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="sel2">
+                            <option value="" selected disabled>Сортировать по рейтингу</option>
+                            <option>По возрастанию</option>
+                            <option>По убыванию</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="category-menu">
+                            <li data-toggle-action=".category-submenu"><span>Категория</span>
+                                <ul class="category-submenu">
+                                    <li><a href="">Категория 1 (10)</a></li>
+                                    <li><a href="">Категория 2 (2)</a></li>
+                                    <li><a href="">Категория 3 (10)</a></li>
+                                    <li><a href="">Категория 4 (2)</a></li>
+                                    <li><a href="">Категория 5 (10)</a></li>
+                                    <li><a href="">Категория 6 (2)</a></li>
+                                </ul>
+                            </li>
+                            <li data-toggle-action=".category-submenu"><span>Категория 2</span>
+                                <ul class="category-submenu">
+                                    <li><a href="">Категория 1 (10)</a></li>
+                                    <li><a href="">Категория 2 (2)</a></li>
+                                    <li><a href="">Категория 3 (10)</a></li>
+                                    <li><a href="">Категория 4 (2)</a></li>
+                                    <li><a href="">Категория 5 (10)</a></li>
+                                    <li><a href="">Категория 6 (2)</a></li>
+                                </ul>
+                            </li>
+                            <li><span>Категория 3</span></li>
+                            <li><span>Категория 4</span></li>
+                            <li><span>Категория 5</span></li>
+                            <li><span>Категория 6</span></li>
+                            <li><span>Категория 7</span></li>
+                            <li><span>Категория 8</span></li>
+                            <li><span>Категория 9</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 col-xs-12">
+                       <div class="row goods-row">
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="row goods-row">
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="col-md-4 col-xs-12">
+                               <div class="goods-item">
+                                    <img src="images/tea1.png" alt="">
+                                    <h3>«Дянь Хун Сун Чжень» </h3>
+                                    <small>Сосновые иглы</small>
+                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__price-block">
+                                        <div class="goods-item__price"><span>654</span></div>
+                                        
+                                        <select class="form-control goods-sel" id="sel3">
+                                            <option>100 гр.</option>
+                                            <option>200 гр.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="news-block">
+             <div class="container">
+                 <h2><span>Новости</span> на сегодня</h2>
+                 <p class="block-desc">Всегда актуальные темы</p>
+                 
+                 <div class="news-item text-right">
+                     <img src="images/news1.jpg" alt="">
+                     <div class="news-item__text">
+                         <div class="news-item__caption">
+                             Тема нашего утра<br> как правильно заваривать белые сорта чая
+                         </div>
+                         <p>Перед завариванием чая вся посуда обязательно обдается кипятком.</p>
+                         <p>Первая заварка, промывающая чай и оживляющая чайный лист, сливается вся без остатка. </p>
+                         
+                         <button class="btn btn-lg btn-white">Читать далее</button>
+                     </div>
+                 </div>
+                 <div class="news-item text-right">
+                     <img src="images/news1.jpg" alt="">
+                     <div class="news-item__text">
+                         <div class="news-item__caption">
+                             Тема нашего утра<br> как правильно заваривать белые сорта чая
+                         </div>
+                         <p>Перед завариванием чая вся посуда обязательно обдается кипятком.</p>
+                         <p>Первая заварка, промывающая чай и оживляющая чайный лист, сливается вся без остатка. </p>
+                         
+                         <button class="btn btn-lg btn-white">Читать далее</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="feedbacks_block">
+            <div class="container">
+                <h2>О чём говорят <span>люди</span></h2>
+                <div class="swiper-container feedbacks-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feedback-item">
+                                <div class="img-wrap">
+                                    <img src="images/photo1.jpg" alt="">
+                                </div>
+                                <a href="">Mike Vazovski</a>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                                </p>
+                                <div class="feedback-item__date">7.06.2017</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback-item">
+                                <div class="img-wrap">
+                                    <img src="images/photo1.jpg" alt="">
+                                </div>
+                                <a href="">Mike Vazovski</a>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                                </p>
+                                <div class="feedback-item__date">7.06.2017</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback-item">
+                                <div class="img-wrap">
+                                    <img src="images/photo1.jpg" alt="">
+                                </div>
+                                <a href="">Mike Vazovski</a>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                                </p>
+                                <div class="feedback-item__date">7.06.2017</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback-item">
+                                <div class="img-wrap">
+                                    <img src="images/photo1.jpg" alt="">
+                                </div>
+                                <a href="">Mike Vazovski</a>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                                </p>
+                                <div class="feedback-item__date">7.06.2017</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feedback-item">
+                                <div class="img-wrap">
+                                    <img src="images/photo1.jpg" alt="">
+                                </div>
+                                <a href="">Mike Vazovski</a>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                                </p>
+                                <div class="feedback-item__date">7.06.2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            
+            </div>
+         </div>
+         <div class="partners-block container">
+            <h2>Наши партнёры</h2>
+             <div class="swiper-container partners-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="partner-item">
+                            <img src="images/partner.png" alt="">
+                            <a href="">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-item">
+                            <img src="images/partner.png" alt="">
+                            <a href="">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-item">
+                            <img src="images/partner.png" alt="">
+                            <a href="">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-item">
+                            <img src="images/partner.png" alt="">
+                            <a href="">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-item">
+                            <img src="images/partner.png" alt="">
+                            <a href="">Ссылка на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
          </div>
     </div>
         <footer class="footer">
@@ -119,6 +637,8 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    
 </body>
 </html>
