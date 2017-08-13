@@ -9,7 +9,7 @@ $(document).ready(function() {
         $(".search-input").css({width: "0", opacity: "0",  "z-index": "-1"});
     });
     
-    $(".category").hover( function (e) {
+    $(".category, .nav-burger").hover( function (e) {
         e.stopPropagation();
         $(".category-submenu").css({display: "block"});
     },

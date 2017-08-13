@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
     height: 55px;
     
     &__left, &__right, &__city, &__phone {
@@ -143,5 +144,47 @@
 @media all and (max-width: 1024px) {
     .header__phone {
         margin-left: 0;
+    }
+}
+
+
+@media all and (max-width: 991px) {
+    .header {
+        height: 100px;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+    
+    .header__city {
+        position: absolute;
+        top: 67px;
+        left: 44%;
+    }
+    
+    .header__search {
+        display: none;
+    }
+    
+    .header__login {
+        span {
+            display: none;
+        }
+    }
+    
+    .header__phone {
+        span {
+            display: none;
+        }
+    }
+    
+    .header__left {
+        margin-left: 90px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .header__social {
+        position: absolute;
+        top: 115px;
     }
 }

@@ -344,6 +344,9 @@ select.form-control {
 .nav-logo:hover {
   text-decoration: none;
 }
+.nav-burger {
+  display: none;
+}
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -422,10 +425,45 @@ select.form-control {
   top: 0;
   right: -270px;
 }
+@media all and (max-width: 991px) {
+  .nav-logo {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 50px;
+    background-size: contain;
+  }
+  .nav-logo span {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 767px) {
+  .nav {
+    height: 40px;
+    justify-content: flex-end;
+    min-width: 350px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 24px;
+  }
+  .nav-burger span {
+    width: 100%;
+    height: 4px;
+    background: #fff;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   height: 55px;
 }
 .header__left,
@@ -555,6 +593,36 @@ select.form-control {
 @media all and (max-width: 1024px) {
   .header__phone {
     margin-left: 0;
+  }
+}
+@media all and (max-width: 991px) {
+  .header {
+    height: 100px;
+    align-items: flex-start;
+    padding-top: 15px;
+  }
+  .header__city {
+    position: absolute;
+    top: 67px;
+    left: 44%;
+  }
+  .header__search {
+    display: none;
+  }
+  .header__login span {
+    display: none;
+  }
+  .header__phone span {
+    display: none;
+  }
+  .header__left {
+    margin-left: 90px;
+  }
+}
+@media all and (max-width: 767px) {
+  .header__social {
+    position: absolute;
+    top: 115px;
   }
 }
 .footer {
@@ -689,7 +757,7 @@ select.form-control {
   display: flex;
   flex-direction: row;
   padding-top: 60px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .tab-item__left {
   position: relative;
