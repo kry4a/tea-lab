@@ -183,3 +183,62 @@
     height: 69px;
     background-size: 18px 69px;
 }
+
+
+@media all and (max-width: 450px) {
+    .tea-tabs {
+        padding-top:0;
+        padding-bottom: 0;
+        &__buttons {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+            margin-top:15px;
+        }
+    }
+    .tea-point {
+        display: none;
+    }
+    .btn-tab {
+        flex: 1 0 45%;
+        
+        width: auto;
+        max-width: 175px;
+        margin:0 5px 10px 5px;
+    }
+
+    .tab-item {
+        display: block;
+        &__right, &__left {
+            width: auto;
+            text-align: center;
+        }
+        &__price, &__caption {
+            left:0;
+            right:0;
+            margin:auto;
+
+            text-align: center;
+        }
+        &__caption {
+            margin-bottom: 5px;
+            font-size: 24px;
+            img {
+                display: none;
+            }
+        }
+        &__desc {
+            margin-top:15px;
+            line-height: 1.75;
+            font-size: 14px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+}

@@ -5,7 +5,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 14px;
     color: #454444;
 }
@@ -23,7 +23,8 @@ h2 {
     font-size: 28px;
     font-weight: 800;
     color: #454444;
-    margin-bottom: 18px;
+    margin-top:0;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -53,7 +54,78 @@ select.form-control {
 }
 
 @media all and (max-width: 450px) {
-    h2 {
+    .h2, h2 {
         font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+}
+
+
+.select {
+    display:inline-block;
+    position:relative;
+    margin-right: 15px;
+    
+    &:after {
+        content:"";
+        position:absolute;
+        right:15px;
+        top:15px;
+        width:5px;
+        height:5px;
+        border-right:1px solid #000;
+        border-bottom:1px solid #000;
+        transform:rotate(45deg);
+        transition:transform .3s ease;
+    }
+
+    &__placeholder {
+        position:relative;
+        display:block;
+        margin-bottom:20px!important;
+        border:1px solid #e6e6e6;
+        border-radius:41px;
+        padding:10px 30px 10px 15px;
+        font-size: 13px;
+        text-align:left;
+        color:#000;
+        cursor:pointer;
+    }
+    &__inner {
+        display:none;
+        position:absolute;
+        left:0;
+        right:0;
+        margin:auto;
+        bottom:-232px;
+        max-width:220px;
+        background:#fff;
+        border:1px solid #ccc;
+    }
+    &__item {
+        cursor:pointer;
+        padding:5px 10px;
+        color:#000;
+        &:hover {
+            background-color:#2c2e32;
+            color:#fff;
+        }
+    }
+    &--opened &__inner { 
+        display: block;
+    }
+    &--opened:after {
+        top:33px; 
+        transform:rotate(-135deg);
+    }
+
+    &--goods {
+        .select__placeholder {
+            font-size: 13px;
+            border: 2px solid #959595;
+            border-radius: 20px;
+            color: #959595;
+        }
     }
 }

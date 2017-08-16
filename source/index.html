@@ -106,32 +106,36 @@
                 </div>
             </nav>
             <div class="top-block__about">
-                <h1>«TEA LAB»</h1>
-                <p>Коммерческое предложение - Лучшая цена на чай и чайные смеси от 100 кг В АССОРТИМЕНТЕ</p>
-                <button class="btn btn-lg btn-green">Начать покупки</button>
+                <div class="container">
+                    <h1>«TEA LAB»</h1>
+                    <p>Коммерческое предложение - Лучшая цена на чай и чайные смеси от 100 кг В АССОРТИМЕНТЕ</p>
+                    <button class="btn btn-lg btn-green">Начать покупки</button>
+                </div>
             </div>
-            <div class="top-block__advantages container">
-                <div class="advantages-item">
-                    <img src="images/graduate-diploma.png" alt="">
-                    <p><strong>Гарантируем </strong>качество<br> нашей продукци.</p>
-                </div>
-                <div class="advantages-item">
-                    <img src="images/job.png" alt="">
-                    <p>Работаем непокладая рук<br> <strong>Пн-Пт , с 9 до 20.</strong></p>
-                </div>
-                <div class="advantages-item">
-                    <img src="images/travelling-vehicles-of-a-road.png" alt="">
-                    <p>Доставка и оплата товара<br> <strong>24ч, 2 рабочих дня</strong></p>
-                </div>
-                <div class="advantages-item">
-                    <img src="images/box.png" alt="">
-                    <p><strong>104 сорта </strong>чая со всего мира,<br> для вашего наслаждения</p>
+            <div class="top-block__advantages">
+                <div class="container">
+                    <div class="advantages-item">
+                        <img src="images/graduate-diploma.png" alt="">
+                        <p><strong>Гарантируем </strong>качество<br> нашей продукци.</p>
+                    </div>
+                    <div class="advantages-item">
+                        <img src="images/job.png" alt="">
+                        <p>Работаем непокладая рук<br> <strong>Пн-Пт , с 9 до 20.</strong></p>
+                    </div>
+                    <div class="advantages-item">
+                        <img src="images/travelling-vehicles-of-a-road.png" alt="">
+                        <p>Доставка и оплата товара<br> <strong>24ч, 2 рабочих дня</strong></p>
+                    </div>
+                    <div class="advantages-item">
+                        <img src="images/box.png" alt="">
+                        <p><strong>104 сорта </strong>чая со всего мира,<br> для вашего наслаждения</p>
+                    </div>
                 </div>
             </div>
          </div>
          <div class="tea-tabs">
            <div class="container">
-               <h2>Создай своё <span>настроение</span></h2>
+               <h2 class="h2">Создай своё <span>настроение</span></h2>
                <p class="block-desc">Вы можете сразу купить нужный чай, просто выберете раздел</p>
                <div class="tea-tabs__buttons">
                    <a href="#morning" class="btn btn-tab btn-morning">«Утренний» </a>
@@ -235,7 +239,7 @@
          </div>
          <div class="other-block">
              <div class="container">
-                 <h2><span>Мы </span>так же предлагаем</h2>
+                 <h2 class="h2"><span>Мы </span>так же предлагаем</h2>
                  <p class="block-desc">Вы можете посетить нужный вам раздел , кликнув по картинке</p>
                  <div class="row other-block__row">
                      <div class="col-md-6 col-xs-12">
@@ -279,22 +283,28 @@
          </div>
          <div class="tea-list-block">
             <div class="container">
-                <h2><span>Оцените</span> полноту вкуса нашего чая</h2>
+                <h2 class="h2"><span>Оцените</span> полноту вкуса нашего чая</h2>
                 <p class="block-desc">Перейдите в карточку товара, чтобы узнать о нём больше</p>
                 <div class="form-wrap">
                     <div class="form-group">
-                        <select class="form-control" id="sel1">
-                            <option value="" selected disabled>Сортировать по цене</option>
-                            <option>По возрастанию</option>
-                            <option>По убыванию</option>
-                        </select>
+                        <div class="select">
+                            <input class="select__input" name="sel1" value="" type="hidden" id="sel1">
+                            <div class="select__placeholder">Сортировать по цене</div>
+                            <div class="select__inner">
+                                <div class="select__item">По возрастанию</div>
+                                <div class="select__item">По убыванию</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <select class="form-control" id="sel2">
-                            <option value="" selected disabled>Сортировать по рейтингу</option>
-                            <option>По возрастанию</option>
-                            <option>По убыванию</option>
-                        </select>
+                        <div class="select">
+                            <input class="select__input" name="sel2" value="" type="hidden" id="sel2">
+                            <div class="select__placeholder">Сортировать по рейтингу</div>
+                            <div class="select__inner">
+                                <div class="select__item">По возрастанию</div>
+                                <div class="select__item">По убыванию</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -333,112 +343,84 @@
                        <div class="row goods-row">
                            <div class="col-md-4 col-xs-12">
                                <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__image">
+                                        <img src="images/tea1.png" alt="">    
+                                    </div>
+                                    <div class="goods-item__desc">
+                                        <h3>«Дянь Хун Сун Чжень» </h3>
+                                        <small>Сосновые иглы</small>
+                                        <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                        <a href="" class="goods-item__link">Подробнее..</a>
+                                    </div>
                                     <div class="goods-item__price-block">
                                         <div class="goods-item__price"><span>654</span></div>
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
+                                        <div class="select select--goods goods-sel">
+                                            <input class="select__input" name="sel1" value="" type="hidden" id="sel1">
+                                            <div class="select__placeholder">100 гр.</div>
+                                            <div class="select__inner">
+                                                <div class="select__item">100 гр.</div>
+                                                <div class="select__item">200 гр.</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                            </div>
                            <div class="col-md-4 col-xs-12">
                                <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__image">
+                                        <img src="images/tea1.png" alt="">    
+                                    </div>
+                                    <div class="goods-item__desc">
+                                        <h3>«Дянь Хун Сун Чжень» </h3>
+                                        <small>Сосновые иглы</small>
+                                        <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                        <a href="" class="goods-item__link">Подробнее..</a>
+                                    </div>
                                     <div class="goods-item__price-block">
                                         <div class="goods-item__price"><span>654</span></div>
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
+                                        <div class="select select--goods goods-sel">
+                                            <input class="select__input" name="sel1" value="" type="hidden" id="sel1">
+                                            <div class="select__placeholder">100 гр.</div>
+                                            <div class="select__inner">
+                                                <div class="select__item">100 гр.</div>
+                                                <div class="select__item">200 гр.</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                            </div>
                            <div class="col-md-4 col-xs-12">
                                <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
+                                    <div class="goods-item__image">
+                                        <img src="images/tea1.png" alt="">    
+                                    </div>
+                                    <div class="goods-item__desc">
+                                        <h3>«Дянь Хун Сун Чжень» </h3>
+                                        <small>Сосновые иглы</small>
+                                        <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
+                                        <a href="" class="goods-item__link">Подробнее..</a>
+                                    </div>
                                     <div class="goods-item__price-block">
                                         <div class="goods-item__price"><span>654</span></div>
-                                        
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
+                                        <div class="select select--goods goods-sel">
+                                            <input class="select__input" name="sel1" value="" type="hidden" id="sel1">
+                                            <div class="select__placeholder">100 гр.</div>
+                                            <div class="select__inner">
+                                                <div class="select__item">100 гр.</div>
+                                                <div class="select__item">200 гр.</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                            </div>
                        </div>
-                       <div class="row goods-row">
-                           <div class="col-md-4 col-xs-12">
-                               <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
-                                    <div class="goods-item__price-block">
-                                        <div class="goods-item__price"><span>654</span></div>
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="col-md-4 col-xs-12">
-                               <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
-                                    <div class="goods-item__price-block">
-                                        <div class="goods-item__price"><span>654</span></div>
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="col-md-4 col-xs-12">
-                               <div class="goods-item">
-                                    <img src="images/tea1.png" alt="">
-                                    <h3>«Дянь Хун Сун Чжень» </h3>
-                                    <small>Сосновые иглы</small>
-                                    <p>Во вкусе и аромате преобладают оттенки кураги, чернослива, меда. Устраняет эффект усталости, согревает и создает хорошее настроение.</p>
-                                    <a href="" class="goods-item__link">Подробнее..</a>
-                                    <div class="goods-item__price-block">
-                                        <div class="goods-item__price"><span>654</span></div>
-                                        
-                                        <select class="form-control goods-sel" id="sel3">
-                                            <option>100 гр.</option>
-                                            <option>200 гр.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                           </div>
-                       </div> 
                     </div>
                 </div>
             </div>
          </div>
          <div class="news-block">
              <div class="container">
-                 <h2><span>Новости</span> на сегодня</h2>
+                 <h2 class="h2"><span>Новости</span> на сегодня</h2>
                  <p class="block-desc">Всегда актуальные темы</p>
                  
                  <div class="news-item text-right">
