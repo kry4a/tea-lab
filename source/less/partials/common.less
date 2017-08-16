@@ -21,11 +21,14 @@ a {
 
 h2 {
     font-size: 28px;
-    font-weight: 800;
     color: #454444;
     margin-top:0;
     margin-bottom: 5px;
     text-align: center;
+}
+.h2 {
+    font-weight: bold;
+    margin-top:0;
 }
 
 .price {
@@ -86,22 +89,24 @@ select.form-control {
         margin-bottom:20px!important;
         border:1px solid #e6e6e6;
         border-radius:41px;
-        padding:10px 30px 10px 15px;
+        padding:10px 30px 10px 10px;
         font-size: 13px;
         text-align:left;
         color:#000;
         cursor:pointer;
+        white-space: nowrap;
     }
     &__inner {
         display:none;
         position:absolute;
+        width: 90%; 
+        top:32px;
         left:0;
         right:0;
         margin:auto;
-        bottom:-232px;
         max-width:220px;
         background:#fff;
-        border:1px solid #ccc;
+        border:1px solid #e6e6e6;
     }
     &__item {
         cursor:pointer;
@@ -116,7 +121,7 @@ select.form-control {
         display: block;
     }
     &--opened:after {
-        top:33px; 
+        top:17px; 
         transform:rotate(-135deg);
     }
 

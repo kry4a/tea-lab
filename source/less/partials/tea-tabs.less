@@ -26,15 +26,11 @@
     padding-top: 60px;
     padding-bottom: 15px;
     
-    &__left {
-        position: relative;
-        width: 700px;
+    &__image {
+        img {
+            width: 85%;
+        }
     }
-    
-    &__right {
-        max-width: 420px;
-    }
-    
     &__caption {
         display: table;
         position: relative;
@@ -65,11 +61,12 @@
         color: #454444;
         margin-top: 48px;
         margin-bottom: 50px;
-        line-height: 3;
+        line-height: 36px;
         font-weight: 600;
     }
     
     .tea-point {
+        right:15px; 
         position: absolute;
         color: #454444;
         
@@ -109,20 +106,17 @@
         }
     }
     .tea-point1 {
-        right: 29px;
-        top: 53px;
+        top: 10%;
         .tick:before {
             width: 100px;
             left: -103px;
         }
     }
     .tea-point2 {
-        right: 20px;
-        top: 180px;
+        top: 30%;
     }
     .tea-point3 {
-        right: 18px;
-        top: 302px;
+        top: 52%;
         .tick:before {
             width: 90px;
             left: -93px;
@@ -172,6 +166,10 @@
     }
 }
 
+.swiper-container {
+    margin-left: -18px;
+    margin-right: -18px;
+}
 .swiper-button-prev {
     background-image: url(../images/left.png);
 }
@@ -210,8 +208,7 @@
 
     .tab-item {
         display: block;
-        &__right, &__left {
-            width: auto;
+        &__img, &__desc {
             text-align: center;
         }
         &__price, &__caption {

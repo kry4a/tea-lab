@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    $('.select').not('.select__item').click(function(){
+        $(this).toggleClass('select--opened');
+    });
+
+    $('.select__item').click(function(){
+        var val = $(this).html();
+        var select = $(this).closest('.select');
+        select.find('.select__input').val(val);
+        select.find('.select__placeholder').html(val);
+        select.removeClass('select--opened');
+        return false;
+    });
+
     $(".icon-search").on("click", function (e) {
         e.stopPropagation();
         $(".search-input").css({width: "200px", opacity: "1", "z-index": "1"});
