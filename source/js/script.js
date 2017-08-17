@@ -58,17 +58,12 @@ $(document).ready(function() {
     });
     
     var swiper2 = new Swiper('.feedbacks-container', {
-        pagination: '.swiper-pagination',
         slidesPerView: 4,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
         spaceBetween: 25,
         breakpoints: {
+         
             1024: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            },
-            768: {
                 slidesPerView: 3,
                 spaceBetween: 30
             },
@@ -76,7 +71,7 @@ $(document).ready(function() {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            320: {
+            450: {
                 slidesPerView: 1,
                 spaceBetween: 10
             }
@@ -90,18 +85,15 @@ $(document).ready(function() {
         spaceBetween: 30,
         breakpoints: {
             1024: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            },
-            768: {
                 slidesPerView: 3,
                 spaceBetween: 30
             },
+            
             640: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            320: {
+            450: {
                 slidesPerView: 1,
                 spaceBetween: 10
             }

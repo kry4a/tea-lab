@@ -39,7 +39,7 @@
         margin-top: auto;
         .container {
             display: flex;
-        justify-content: space-around;
+            justify-content: space-around;
         }
     }
 }
@@ -68,8 +68,25 @@
     }
 }
 
+@media all and (max-width: 1021px) {
+    .advantages-item {
+        width: 50%;
+        display: block;
+        text-align: center;
+        img {
+            height: 40px;
+        }
+        
 
-@media all and (max-width: 450px) {
+        
+        p {
+            font-size: 12px;    
+        }
+        
+    }
+}
+
+@media all and (max-width: 550px) {
     .top-block {
         height: auto;
         
@@ -98,10 +115,13 @@
     } 
 
     .advantages-item {
+        width: 100%;
         margin-bottom: 50px;
+        
         &:last-child {
             margin-bottom: 0;
         }
     }
 
 }
+

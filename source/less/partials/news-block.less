@@ -21,26 +21,35 @@
     width: 100%;
     margin-bottom: 20px;
     
-    img {
+
+    &__img {
+        text-align: center;
         width: 50%;
-        height: 100%;
+        
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+        }    
     }
+    
     
     &__text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
         justify-content: center;
         width: 50%;
         background: url(../images/news-bg-right.png);
         background-repeat: no-repeat;
         background-size: 100% 390px;
         
+        text-align: left;
+        padding-left: 60px;
         p {
             max-width: 420px;
             color: #fff;
             font-weight: 600;
-            text-align: left;
             line-height: 1.7;
         }
         p:last-of-type {
@@ -53,7 +62,7 @@
         text-transform: uppercase;
         color: #fff;
         line-height: 1.5;
-        text-align: left;
+        
         max-width: 420px;
         font-weight: 600;
         margin-bottom: 35px;
@@ -68,5 +77,55 @@
         background: url(../images/news-bg-left.png);
         background-repeat: no-repeat;
         background-size: 100% 390px;
+    }
+}
+
+
+@media all and (max-width: 728px) {
+    .news-item {
+         &__img {
+            width: 40%;
+        }
+        &__text {
+            width: 60%;
+            
+        }
+    }
+}
+@media all and (max-width: 550px) {
+    .news-block {
+        padding-top:40px;
+        padding-bottom:40px;
+
+        .block-desc {
+            margin-bottom: 45px;
+        }
+    }
+    .news-item {
+        display: block;
+        height: auto;
+
+        &__img,&__text {
+            width: 100%;
+            position: relative;
+        }
+        
+        &__img {
+            overflow:hidden;
+        }
+        &__img img {
+            margin-left: -25%;
+            width: 150%;
+            height: auto;
+        }
+        
+        &__text {
+            padding: 30px;
+            text-align: center;
+            background: url(../images/news-bg.png);
+        }
+        &__caption {
+            font-size: 22px;
+        }
     }
 }
