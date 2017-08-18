@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  @@include('include/head.html')
+</head>
+<body>
+  <div class="content-wrap">
+     <header>
+      <div class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header__left">
+              <div class="header__city">
+                <span>Ваш город: </span>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="divue" aria-expanded="false"> Москва <span class="caret"></span> </a>
+                  <ul class="dropdown-menu" aria-labelledby="drop1"> 
+                  <li><a href="#">Санкт-Петербург</a></li> 
+                  <li><a href="#">Екатеринбург</a>
+                  </li> 
+                  <li><a href="#">Владивосток</a></li> 
+                </ul>
+                </div>  
+              </div>
+              <div class="header__phone">
+                <span>Звоните нам: </span>
+                <a href="">8 800 88 800 88</a>
+              </div>
+              <div class="header__social">
+                <a href=""><img src="images/tw.png" alt="twitter"></a>
+                <a href=""><img src="images/vk.png" alt="vkontakte"></a>
+                <a href=""><img src="images/fb.png" alt="facebook"></a>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__search">
+                 <i class="icon-search"></i>
+                <div class="search-input">
+                  <input type="text" class="form-condivol" placeholder="Найти.." aria-describedby="basic-addon1">
+                  <span class="search-close glyphicon glyphicon-remove"></span>
+                </div>
+              </div>
+              <div class="header__login">
+                <a href="">Войти</a>
+                <span>и получить скидку</span>
+              </div>
+              <a href="" class="header__cart">
+                <span>99</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-line"></div>
+      <nav class="nav nav--dark container">
+        <a href="" class="nav-logo nav-logo--green"><span>TEA</span><span>LAB</span></a>
+        <ul class="nav-list">
+          <li class="active"><a href="">Главная</a></li>
+          <li class="category"><a href="">Каталог</a>
+            <ul class="nav-submenu category-submenu">
+              <li class="nav-parent category1"><a href="">Жасминовый чай</a>
+                <ul class="nav-submenu second-submenu category1-sub">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </li>
+              <li class="nav-parent category2"><a href="">Зелёный чай</a>
+                <ul class="nav-submenu second-submenu category2-sub">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </li>
+              <li><a href="">Связанный чай</a></li>
+              <li><a href="">Белый чай</a></li>
+              <li><a href="">Желтый чай</a></li>
+              <li><a href="">Чёрный чай</a></li>
+              <li><a href="">Улуны</a></li>
+              <li><a href="">Пуэры</a></li>
+              <li><a href="">Прочие</a></li>
+              <li><a href="">Кофе</a></li>
+            </ul>
+          </li>
+          <li><a href="">Посуда</a></li>
+          <li><a href="">Акции</a></li>
+          <li><a href="">Подарки</a></li>
+          <li><a href="">Новинки</a></li>
+          <li><a href="">Оптом</a></li>
+          <li><a href="">О TEALAB</a></li>
+          <li><a href="">Отзывы</a></li>
+          <li><a href="">Прочее</a></li>
+        </ul>
+        <div class="nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="header-line"></div>
+     </header>
+     <div class="page-info">
+       <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item">Корзина</li>
+        </ul>
+       </div>
+     </div>
+     <div class="page-content">
+       <div class="container">
+         <div class="cart">
+          <h1 class="cart__title">Ваши покупки</h1>
+          <div class="table table">
+            
+              <div class="table__row table__head">
+                <div class="table__cell table__cell--center">
+                  <span class="table__text table__text--bold">Фото</span>
+                </div>
+                <div class="table__cell">
+                  <span class="table__text table__text--bold">Наименование</span>
+                </div>
+                <div class="table__cell table__price-container">
+                  <span class="table__text table__text--bold">Цена за шт.</span>
+                </div>
+                <div class="table__cell">
+                  <span class="table__text table__text--bold">Кол-во</span>
+                </div>
+                <div class="table__cell table__cell--center">
+                  <span class="table__text table__text--bold">Всего</span>
+                </div>
+              </div>
+            
+              <div class="table__row">
+                <div class="table__cell table__cell--center">
+                  <a href="#" class="table__picture-container">
+                      <img class="table__picture" src="http://via.placeholder.com/120x75" alt=" Дянь Хун Сун Чжень" title=" Дянь Хун Сун Чжень">
+                  </a>
+                </div>
+                <div class="table__cell">
+                  <a class="table__product" href="#">
+                    Дянь Хун Сун Чжень
+                  </a>
+                  <p class="table__text">100 гр.</p>
+                </div>
+                <div class="table__cell table__price-container">
+                  <span class="table__text" data-product-price="654">
+                    654
+                  </span>
+                </div>
+                <div class="table__cell">
+                  <div class="spinner">
+                    <input type="hidden" value="23758" name="cart_id">
+                    <input type="hidden" value="51" name="product_id">
+                    <input class="spinner-input" type="text" value="3">
+                    
+                    <span class="spinner-button spinner-up" href="#">+</span>
+                    <span class="spinner-button spinner-down" href="#">-</span>
+                  </div>
+                </div>
+                <div class="table__cell table__cell--center">
+                  <span class="table__text table__text--total" data-product-total="1308">
+                    1308
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/footer.html')
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootsdivapcdn.com/bootsdivap/3.3.7/js/bootsdivap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     height: 135px;
-    
+   
     &-logo {
         position: relative;
         display: flex;
@@ -27,6 +27,13 @@
         &:hover {
             text-decoration: none;
         }
+
+
+        &--green {
+            span {
+                color: #bada00;
+            }
+        }
     }
     
     &-burger {
@@ -47,7 +54,7 @@
     }
     
     li > a {
-        color: #fff;
+        color: #454444;
     }
     
     .active {
@@ -56,6 +63,7 @@
         padding: 10px 20px;
         
         a {
+            color:#ffffff;
             font-weight: 600;
             &:hover {
                 text-decoration: none;
@@ -127,6 +135,53 @@
     right: -270px;
 }
 
+
+
+
+.breadcrumbs {
+    display: block;
+    padding: 0;
+    margin-bottom: 15px;
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        
+        margin-right: 20px;
+
+        font-size: 14px;    
+        font-weight: bold;
+        
+        
+
+        &:after {
+            position: absolute;
+            content: "";
+            top:3px;
+            right: -15px;
+            width: 8px;
+            height: 8px;
+
+            border-right: 2px solid #bada00;
+            border-bottom: 2px solid #bada00;
+            transform: rotate(-45deg);
+        }
+        &:last-child {
+            margin-right: 0;
+
+            &:after {
+                content:none;
+            }
+        }
+    }
+
+    &__link {
+        color:#bada00;
+
+    }
+}
+
+
 @media all and (max-width: 991px) {
 
     .nav-logo {
@@ -170,3 +225,8 @@
         }
     }
 }
+
+
+
+
+

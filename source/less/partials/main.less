@@ -1,0 +1,109 @@
+.page-info {
+  padding: 20px 0;
+}
+
+
+
+.cart {
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+
+.table {
+  display: table;
+  width: 100%;
+  &__head {
+    border-radius: 15px;
+    padding-bottom: 15px;
+
+  }
+  
+  &__row {
+    display: table-row;
+    border: 1px solid #dbdbdb;
+  }
+
+  &__cell {
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle !important;
+    
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: left;
+    &--bold {
+      font-weight: bold;
+    }
+    &--total {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  &__product {
+    display: block;
+    font-weight: bold;
+    color:#bada00;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+/* <----Spinner section---- */
+.spinner {
+  display:block; 
+  position:relative; 
+  overflow:hidden;
+  text-align: center;
+  width: 150px;
+  
+  
+  &-input {
+    width:60px; 
+    border:none; 
+    padding:0 5px; 
+    height:30px; 
+    line-height:30px; 
+    border: 1px solid #d8d8d8;
+    color: #d8d8d8;
+
+    border-radius: 15px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  &-button {
+    position:absolute; 
+    width: 40px;
+    background-color:#f6f6f6;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+    color:#bbda03;
+    cursor:pointer;
+    font-weight: bold;
+  }
+
+  &-button:hover {
+    color:#ffffff;
+    background-color:#bada00;
+  }
+  
+  &-up {
+    right:0;
+  }
+  
+  &-down{
+    left:0;
+  }
+}
+
