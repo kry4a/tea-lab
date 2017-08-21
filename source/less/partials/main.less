@@ -5,11 +5,50 @@
 
 
 .cart {
+  margin-bottom: 30px;
+
   &__title {
     font-size: 18px;
     margin-bottom: 15px;
   }
+  
+  &__table {
+
+  }
+
+  &__totals, &__actions {
+    text-align: right;
+  }
+
+  &__totals {
+    .total {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  &-product {
+    display: block;
+    font-weight: bold;
+    color:#bada00;
+    margin-bottom: 10px;
+
+    &__price {
+      font-size: 16px;
+    }
+
+    &__total {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  
+  &__button {
+    padding: 10px 35px;
+  }
 }
+
 
 
 .table {
@@ -17,22 +56,56 @@
   width: 100%;
   &__head {
     border-radius: 15px;
-    padding-bottom: 15px;
-
+    
+    .table__cell {
+      white-space: nowrap;
+    }
   }
   
   &__row {
     display: table-row;
-    border: 1px solid #dbdbdb;
+    
+
+    &--block {
+      display: block;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;  
+      margin-bottom: 15px;  
+    }
   }
 
   &__cell {
-    padding: 5px;
+    padding: 10px 20px;
     display: table-cell;
+    
     vertical-align: middle !important;
     
     &--center {
       text-align: center;
+    }
+    
+    &--inline {
+      display: inline-block;
+    }
+
+    &--10 {
+      width: 10%;
+    }
+
+    &--15 {
+      width: 15%;
+    }
+
+    &--20 {
+      width: 20%;
+    }
+
+    &--25 {
+      width: 25%;
+    }
+
+    &--30 {
+      width: 30%;
     }
   }
 
@@ -42,17 +115,10 @@
     &--bold {
       font-weight: bold;
     }
-    &--total {
-      font-weight: bold;
-      font-size: 16px;
-    }
   }
 
-  &__product {
-    display: block;
-    font-weight: bold;
-    color:#bada00;
-    margin-bottom: 5px;
+  &__picture {
+    width: 100%;
   }
 }
 
@@ -107,3 +173,19 @@
   }
 }
 
+.icon {
+  display: inline-block;
+  cursor: pointer;
+
+  &--search {
+    background: url(../images/search.png) center no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  &--search-green {
+    background: url(../images/search-green.png) center no-repeat;
+    width: 20px;
+    height: 20px; 
+  }
+  
+}

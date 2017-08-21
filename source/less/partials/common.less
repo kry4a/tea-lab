@@ -32,14 +32,29 @@ h2 {
 }
 
 .price {
-    position: relative;
-    
+    position: relative; 
+    margin-right: 25px;
     &:after {
         position: absolute;
         content: url(../images/ruble-currency-sign.png);
         width: 19px;
         height: 21px;
         right: -25px;
+    }
+    
+    &--black {
+        margin-right: 15px;
+        &:after {
+            content: "";
+            background: url(../images/ruble-black.png);
+            background-size: cover;
+            background-position: center center; 
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 13px;
+            right: -15px;
+            top: 4px;
+        }
     }
 }
 
@@ -143,5 +158,15 @@ select.form-control {
     .select {
         display: block;
         margin-right: 0;
+    }
+    
+    .hidden--xs {
+      display:none !important;
+    }   
+}
+
+.caret {
+    &--green {
+        color:#bada00 ;
     }
 }

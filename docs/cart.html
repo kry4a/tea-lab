@@ -27,10 +27,10 @@
         <div class="container">
           <div class="header-content">
             <div class="header__left">
-              <div class="header__city">
+              <div class="header__city header__city--green">
                 <span>Ваш город: </span>
                 <div class="dropdown">
-                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="divue" aria-expanded="false"> Москва <span class="caret"></span> </a>
+                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="divue" aria-expanded="false"> Москва <span class="caret caret--green"></span> </a>
                   <ul class="dropdown-menu" aria-labelledby="drop1"> 
                   <li><a href="#">Санкт-Петербург</a></li> 
                   <li><a href="#">Екатеринбург</a>
@@ -39,19 +39,19 @@
                 </ul>
                 </div>  
               </div>
-              <div class="header__phone">
+              <div class="header__phone header__phone--green">
                 <span>Звоните нам: </span>
                 <a href="">8 800 88 800 88</a>
               </div>
               <div class="header__social">
-                <a href=""><img src="images/tw.png" alt="twitter"></a>
-                <a href=""><img src="images/vk.png" alt="vkontakte"></a>
-                <a href=""><img src="images/fb.png" alt="facebook"></a>
+                <a href=""><img src="images/tw-green.png" alt="twitter"></a>
+                <a href=""><img src="images/vk-green.png" alt="vkontakte"></a>
+                <a href=""><img src="images/fb-green.png" alt="facebook"></a>
               </div>
             </div>
             <div class="header__right">
               <div class="header__search">
-                 <i class="icon-search"></i>
+                <i class="icon--search-green"></i>
                 <div class="search-input">
                   <input type="text" class="form-condivol" placeholder="Найти.." aria-describedby="basic-addon1">
                   <span class="search-close glyphicon glyphicon-remove"></span>
@@ -61,7 +61,7 @@
                 <a href="">Войти</a>
                 <span>и получить скидку</span>
               </div>
-              <a href="" class="header__cart">
+              <a href="" class="header__cart header__cart--green">
                 <span>99</span>
               </a>
             </div>
@@ -126,59 +126,56 @@
        <div class="container">
          <div class="cart">
           <h1 class="cart__title">Ваши покупки</h1>
-          <div class="table table">
-            
-              <div class="table__row table__head">
-                <div class="table__cell table__cell--center">
-                  <span class="table__text table__text--bold">Фото</span>
-                </div>
-                <div class="table__cell">
-                  <span class="table__text table__text--bold">Наименование</span>
-                </div>
-                <div class="table__cell table__price-container">
-                  <span class="table__text table__text--bold">Цена за шт.</span>
-                </div>
-                <div class="table__cell">
-                  <span class="table__text table__text--bold">Кол-во</span>
-                </div>
-                <div class="table__cell table__cell--center">
-                  <span class="table__text table__text--bold">Всего</span>
-                </div>
+          <div class="table cart__table">
+            <div class="table__head table__row table__row--block">
+              <div class="table__cell table__cell--inline table__cell--center table__cell--20 hidden--xs">
+                <span class="table__text table__text--bold">Фото</span>
+              </div><div class="table__cell table__cell--inline table__cell--30">
+                <span class="table__text table__text--bold">Наименование</span>
+              </div><div class="table__cell table__cell--inline table__price-container table__cell--15 hidden--xs">
+                <span class="table__text table__text--bold">Цена за шт.</span>
+              </div><div class="table__cell table__cell--inline table__cell--25">
+                <span class="table__text table__text--bold">Кол-во</span>
+              </div><div class="table__cell table__cell--inline table__cell--center table__cell--10">
+                <span class="table__text table__text--bold">Всего</span>
               </div>
-            
-              <div class="table__row">
-                <div class="table__cell table__cell--center">
-                  <a href="#" class="table__picture-container">
-                      <img class="table__picture" src="http://via.placeholder.com/120x75" alt=" Дянь Хун Сун Чжень" title=" Дянь Хун Сун Чжень">
-                  </a>
+            </div>
+            <div class="table__row table__row--block">
+              <div class="table__cell table__cell--inline table__cell--center table__cell--20 hidden--xs">
+                <a href="#" class="table__picture-container">
+                    <img class="table__picture" src="http://via.placeholder.com/120x75" alt=" Дянь Хун Сун Чжень" title=" Дянь Хун Сун Чжень">
+                </a>
+              </div><div class="table__cell table__cell--inline table__cell--30">
+                <a class="table__text cart-product" href="#">
+                  Дянь Хун Сун Чжень
+                </a>
+                <p class="table__text">100 гр.</p>
+              </div><div class="table__cell table__cell--inline table__price-container table__cell--15 hidden--xs">
+                <span class="cart-product__price" data-product-price="654">
+                  654
+                </span>
+              </div><div class="table__cell table__cell--inline table__cell--25">
+                <div class="spinner">
+                  <input type="hidden" value="23758" name="cart_id">
+                  <input type="hidden" value="51" name="product_id">
+                  <input class="spinner-input" type="text" value="3">
+                  
+                  <span class="spinner-button spinner-up" href="#">+</span>
+                  <span class="spinner-button spinner-down" href="#">-</span>
                 </div>
-                <div class="table__cell">
-                  <a class="table__product" href="#">
-                    Дянь Хун Сун Чжень
-                  </a>
-                  <p class="table__text">100 гр.</p>
-                </div>
-                <div class="table__cell table__price-container">
-                  <span class="table__text" data-product-price="654">
-                    654
-                  </span>
-                </div>
-                <div class="table__cell">
-                  <div class="spinner">
-                    <input type="hidden" value="23758" name="cart_id">
-                    <input type="hidden" value="51" name="product_id">
-                    <input class="spinner-input" type="text" value="3">
-                    
-                    <span class="spinner-button spinner-up" href="#">+</span>
-                    <span class="spinner-button spinner-down" href="#">-</span>
-                  </div>
-                </div>
-                <div class="table__cell table__cell--center">
-                  <span class="table__text table__text--total" data-product-total="1308">
-                    1308
-                  </span>
-                </div>
+              </div><div class="table__cell table__cell--inline table__cell--center table__cell--10">
+                <span class="cart-product__total" data-product-total="1308">
+                  1308
+                </span>
               </div>
+            </div>
+          </div>
+          <div class="cart__totals">
+            <p class="total">Предварительная стоимость: <span class="price price--black">654</span></p>
+            <p class="total">Итого: <span class="price price--black">654</span></p>
+          </div>
+          <div class="cart__actions">
+            <button class="cart__button btn btn-green">Оформить</button>
           </div>
         </div>
       </div>
