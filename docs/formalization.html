@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tea Lab</title>
+
+      <!--[if lt IE 9]>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+      <![endif]-->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+      <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!--[if IE 8]>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+  <div class="content-wrap">
+     <header>
+      <div class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header__left">
+              <div class="header__city header__city--green">
+                <span>Ваш город: </span>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="divue" aria-expanded="false"> Москва <span class="caret caret--green"></span> </a>
+                  <ul class="dropdown-menu" aria-labelledby="drop1"> 
+                  <li><a href="#">Санкт-Петербург</a></li> 
+                  <li><a href="#">Екатеринбург</a>
+                  </li> 
+                  <li><a href="#">Владивосток</a></li> 
+                </ul>
+                </div>  
+              </div>
+              <div class="header__phone header__phone--green">
+                <span>Звоните нам: </span>
+                <a href="">8 800 88 800 88</a>
+              </div>
+              <div class="header__social">
+                <a href=""><img src="images/tw-green.png" alt="twitter"></a>
+                <a href=""><img src="images/vk-green.png" alt="vkontakte"></a>
+                <a href=""><img src="images/fb-green.png" alt="facebook"></a>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__search">
+                <i class="icon--search-green"></i>
+                <div class="search-input">
+                  <input type="text" class="form-condivol" placeholder="Найти.." aria-describedby="basic-addon1">
+                  <span class="search-close glyphicon glyphicon-remove"></span>
+                </div>
+              </div>
+              <div class="header__login">
+                <a href="">Войти</a>
+                <span>и получить скидку</span>
+              </div>
+              <a href="" class="header__cart header__cart--green">
+                <span>99</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-line"></div>
+      <nav class="nav nav--dark container">
+        <a href="" class="nav-logo nav-logo--green"><span>TEA</span><span>LAB</span></a>
+        <ul class="nav-list">
+          <li class="active"><a href="">Главная</a></li>
+          <li class="category"><a href="">Каталог</a>
+            <ul class="nav-submenu category-submenu">
+              <li class="nav-parent category1"><a href="">Жасминовый чай</a>
+                <ul class="nav-submenu second-submenu category1-sub">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </li>
+              <li class="nav-parent category2"><a href="">Зелёный чай</a>
+                <ul class="nav-submenu second-submenu category2-sub">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul>
+              </li>
+              <li><a href="">Связанный чай</a></li>
+              <li><a href="">Белый чай</a></li>
+              <li><a href="">Желтый чай</a></li>
+              <li><a href="">Чёрный чай</a></li>
+              <li><a href="">Улуны</a></li>
+              <li><a href="">Пуэры</a></li>
+              <li><a href="">Прочие</a></li>
+              <li><a href="">Кофе</a></li>
+            </ul>
+          </li>
+          <li><a href="">Посуда</a></li>
+          <li><a href="">Акции</a></li>
+          <li><a href="">Подарки</a></li>
+          <li><a href="">Новинки</a></li>
+          <li><a href="">Оптом</a></li>
+          <li><a href="">О TEALAB</a></li>
+          <li><a href="">Отзывы</a></li>
+          <li><a href="">Прочее</a></li>
+        </ul>
+        <div class="nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class="header-line"></div>
+     </header>
+     <div class="page-info">
+       <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item">Регистрация</li>
+        </ul>
+       </div>
+     </div>
+     <div class="page-content">
+        <div class="container">
+          <div class="order">
+            <h1 class="order__title">Оформление заказ</h1>   
+            <div class="row">
+              <div class="order__step step col-md-6">
+                <h3 class="step__title step__title--first">
+                  Контактные данные
+                </h3>
+                <div class="step__content">
+                  
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="firstname">Имя: </label>
+                    <input class="input-group__input col-8" value="" placeholder="Имя" id="firstname" name="firstname" type="text"> 
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="email">E-mail: </label>
+                    <input class="input-group__input col-8 im--mail" value="" placeholder="E-mail" id="email" name="email" type="text">
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="telephone">Телефон: </label>
+                    <input class="input-group__input col-8 im--phone" value="" placeholder="+7 (___) ___-__-__" id="telephone" name="telephone" maxlength="18" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="order__step step col-md-6">
+                <h3 class="step__title step__title--second">
+                  Способ доставки в город
+                </h3>
+                <div class="step__content step__content--grey">
+                  <div class="input-group">
+                    <div class="radioblock">
+                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Доставка курьером от <span class="price price--black">356</span></div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="city">Город: </label>
+                    <input class="input-group__input col-8" value="" placeholder="Город" id="city" name="city" type="text"> 
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="address">Адрес доставки: </label>
+                    <input class="input-group__input col-8" value="" placeholder="Адрес доставки" id="address" name="address" type="text"> 
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="time">Время доставки: </label>
+                    <div class="select col-8">
+                      <input class="select__input" name="time" value="" type="hidden" id="time">
+                      <div class="select__placeholder select__placeholder--big">100 гр.</div>
+                      <div class="select__inner">
+                        <div class="select__item">100 гр.</div>
+                        <div class="select__item">200 гр.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label class="input-group__label col-4" for="date">Дата доставки: </label>
+                    <input class="input-group__input col-8" value="" placeholder="Дата доставки" id="date" name="date" type="text"> 
+                  </div>  
+                </div>
+                <div class="step__content step__content--grey">
+                  <div class="input-group">
+                    <div class="radioblock">
+                      <input class="radioblock__input" type="radio"><div class="radioblock__text">До пункта выдачи <span class="price price--black">125</span></div>
+                    </div>
+                  </div>
+
+                  <p>До ПВЗ</p>
+                  <p>Планируемая дата доставки: 2017.08.11.</p>
+                  <p>Стоимость: <span class="price price--black">125</span></p>
+                  <p><b>Адрес:</b> г. Москва,</p>
+                  <p><b>Телефон:</b> 79888205854</p>
+                  <p><b>Режим работы:</b> пн-пт 10:00-20:00, сб 10:00-16:00, вс 10:00-14:0</p>
+                </div>
+              </div>
+              <div class="order__step step col-xs-12">
+                <h3 class="step__title step__title--third">
+                  Способ оплаты
+                </h3>
+                <div class="payment">
+                  <div class="payment__method payment__method--active" data-payment-code="visa">
+                    <div class="radioblock">
+                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Оплатить картой Visa/Mastercard</div>
+                    </div>
+                  </div>
+                  <div class="payment__method" data-payment-code="yandex">
+                    <div class="radioblock">
+                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Яндекс.Деньги</div>
+                    </div>
+                  </div>
+                  <div class="payment__method" data-payment-code="cash">
+                    <div class="radioblock">
+                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Наличными при получении</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+      <footer class="footer">
+          <div class="container">
+              <div class="footer-nav">
+                  <div class="footer-nav__column">
+                      <ul>
+                          <li><a href="">Главная</a></li>
+                          <li><a href="">Чайна карта</a></li>
+                          <li><a href="">Акции</a></li>
+                          <li><a href="">Подарочные наборы</a></li>
+                          <li><a href="">Новинки</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-nav__column">
+                      <ul>
+                          <li><a href="">Оптовые поставки</a></li>
+                          <li><a href="">О нашей лавке</a></li>
+                          <li><a href="">Отзывы</a></li>
+                          <li><a href="">Ещё</a></li>
+                          <li><a href="">Контакты</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-nav__column">
+                      <ul>
+                          <li><a href="">Благодарности</a></li>
+                          <li><a href="">Гарантии - сертификаты</a></li>
+                          <li><a href="">Пол. соглашение</a></li>
+                          <li><a href="">Личный кабинет</a></li>
+                          <li><a href="">Статьи</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-contacts">
+                  <div class="footer-contacts__address">
+                      <strong>Ул. Транспортная 19, Москва, Российская Федерация</strong>
+                      Пн-Пт, с 9:00 до 20:00
+                  </div>
+                  <div class="footer-contacts__phone">
+                      <a href="">8 800 88 800 88</a>
+                      <a href="">8 800 88 800 88</a>
+                  </div>
+              </div>
+              <div class="footer-copyright">
+                  <span>&copy;2016-2017</span>
+                  <a href=""><img src="images/logo_footer.png" alt=""></a>
+                  <span>ООО «TeaLab»</span>
+              </div>
+          </div>
+      </footer>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootsdivapcdn.com/bootsdivap/3.3.7/js/bootsdivap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
