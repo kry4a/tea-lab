@@ -108,7 +108,7 @@
      <div class="page-content">
         <div class="container">
           <div class="order">
-            <h1 class="order__title">Оформление заказ</h1>   
+            <h1 class="cart__title">Оформление заказа</h1>   
             <div class="row">
               <div class="order__step step col-md-6">
                 <h3 class="step__title step__title--first">
@@ -152,10 +152,11 @@
                     <label class="input-group__label col-4" for="time">Время доставки: </label>
                     <div class="select col-8">
                       <input class="select__input" name="time" value="" type="hidden" id="time">
-                      <div class="select__placeholder select__placeholder--big">100 гр.</div>
+                      <div class="select__placeholder select__placeholder--big">10:00 - 14:00</div>
                       <div class="select__inner">
-                        <div class="select__item">100 гр.</div>
-                        <div class="select__item">200 гр.</div>
+                        <div class="select__item">10:00 - 14:00</div>
+                        <div class="select__item">14:00 - 18:00</div>
+                        <div class="select__item">18:00 - 22:00</div>
                       </div>
                     </div>
                   </div>
@@ -186,20 +187,32 @@
                 <div class="payment">
                   <div class="payment__method payment__method--active" data-payment-code="visa">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Оплатить картой Visa/Mastercard</div>
+                      <input class="radioblock__input" checked="checked" type="radio"><div class="payment__image"><img src="images/visa.png" alt=""></div><div class="radioblock__text">Оплатить картой Visa/Mastercard</div>
                     </div>
                   </div>
                   <div class="payment__method" data-payment-code="yandex">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Яндекс.Деньги</div>
+                      <input class="radioblock__input" type="radio"><div class="payment__image"><img src="images/yandex.png" alt=""></div><div class="radioblock__text">Яндекс.Деньги</div>
                     </div>
                   </div>
                   <div class="payment__method" data-payment-code="cash">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Наличными при получении</div>
+                      <input class="radioblock__input" type="radio"><div class="payment__image"><img src="images/cash.png" alt=""></div><div class="radioblock__text">Наличными при получении</div>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-xs-12">
+                
+              
+              <div class="order__comment">
+                <textarea class="input-group__text textarea" rows="5" placeholder="Комментарий к заказу"></textarea>
+              </div>
+              <div class="cart__totals order__totals">
+                <p class="total">Предварительная стоимость: <span class="price price--black">654</span></p>
+                <p class="total">Итого: <span class="price price--black">654</span></p>
+                <button class="order__button btn btn-green">Заказать</button>
+              </div>
               </div>
             </div>
           </div>
