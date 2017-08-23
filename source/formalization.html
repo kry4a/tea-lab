@@ -54,20 +54,20 @@
       <div class="header-line"></div>
       <nav class="nav nav--dark container">
         <a href="" class="nav-logo nav-logo--green"><span>TEA</span><span>LAB</span></a>
-        <ul class="nav-list">
+        <ul class="nav-list" id="nav">
           <li class="active"><a href="">Главная</a></li>
           <li class="category"><a href="">Каталог</a>
             <ul class="nav-submenu category-submenu">
-              <li class="nav-parent category1"><a href="">Жасминовый чай</a>
-                <ul class="nav-submenu second-submenu category1-sub">
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
+              <li class="nav-parent category"><a href="">Жасминовый чай</a>
+                <ul class="nav-submenu nav-submenu--second">
+                  <li><a href="">Подпункт 1</a></li>
+                  <li><a href="">Подпункт 2</a></li>
                 </ul>
               </li>
-              <li class="nav-parent category2"><a href="">Зелёный чай</a>
-                <ul class="nav-submenu second-submenu category2-sub">
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
+              <li class="nav-parent category"><a href="">Зелёный чай</a>
+                <ul class="nav-submenu nav-submenu--second">
+                  <li><a href="">Подпункт 1</a></li>
+                  <li><a href="">Подпункт 2</a></li>
                 </ul>
               </li>
               <li><a href="">Связанный чай</a></li>
@@ -89,7 +89,7 @@
           <li><a href="">Отзывы</a></li>
           <li><a href="">Прочее</a></li>
         </ul>
-        <div class="nav-burger">
+        <div class="nav-burger nav-burger--green" data-menu="nav">
           <span></span>
           <span></span>
           <span></span>
@@ -137,7 +137,7 @@
                 <div class="step__content step__content--grey">
                   <div class="input-group">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="radioblock__text">Доставка курьером от <span class="price price--black">356</span></div>
+                      <input class="radioblock__input" type="radio" name="shipping" value="courier"><div class="radioblock__text">Доставка курьером от <span class="price price--black">356</span></div>
                     </div>
                   </div>
                   <div class="input-group">
@@ -145,11 +145,11 @@
                     <input class="input-group__input col-8" value="" placeholder="Город" id="city" name="city" type="text"> 
                   </div>
                   <div class="input-group">
-                    <label class="input-group__label col-4" for="address">Адрес доставки: </label>
+                    <label class="input-group__label col-4" for="address">Адрес: </label>
                     <input class="input-group__input col-8" value="" placeholder="Адрес доставки" id="address" name="address" type="text"> 
                   </div>
                   <div class="input-group">
-                    <label class="input-group__label col-4" for="time">Время доставки: </label>
+                    <label class="input-group__label col-4" for="time">Время: </label>
                     <div class="select col-8">
                       <input class="select__input" name="time" value="" type="hidden" id="time">
                       <div class="select__placeholder select__placeholder--big">10:00 - 14:00</div>
@@ -168,11 +168,10 @@
                 <div class="step__content step__content--grey">
                   <div class="input-group">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="radioblock__text">До пункта выдачи <span class="price price--black">125</span></div>
+                      <input class="radioblock__input" type="radio" name="shipping" value="pickup"><div class="radioblock__text">До пункта выдачи <span class="price price--black">125</span></div>
                     </div>
                   </div>
 
-                  <p>До ПВЗ</p>
                   <p>Планируемая дата доставки: 2017.08.11.</p>
                   <p>Стоимость: <span class="price price--black">125</span></p>
                   <p><b>Адрес:</b> г. Москва,</p>
@@ -187,17 +186,17 @@
                 <div class="payment">
                   <div class="payment__method payment__method--active" data-payment-code="visa">
                     <div class="radioblock">
-                      <input class="radioblock__input" checked="checked" type="radio"><div class="payment__image"><img src="images/visa.png" alt=""></div><div class="radioblock__text">Оплатить картой Visa/Mastercard</div>
+                      <input class="radioblock__input" checked="checked" type="radio" name="payment" value="visa"><div class="payment__image"><img src="images/visa.png" alt=""></div><div class="radioblock__text">Оплата картой</div>
                     </div>
                   </div>
                   <div class="payment__method" data-payment-code="yandex">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="payment__image"><img src="images/yandex.png" alt=""></div><div class="radioblock__text">Яндекс.Деньги</div>
+                      <input class="radioblock__input" type="radio" name="payment" value="yandex"><div class="payment__image"><img src="images/yandex.png" alt=""></div><div class="radioblock__text">Яндекс.Деньги</div>
                     </div>
                   </div>
                   <div class="payment__method" data-payment-code="cash">
                     <div class="radioblock">
-                      <input class="radioblock__input" type="radio"><div class="payment__image"><img src="images/cash.png" alt=""></div><div class="radioblock__text">Наличными при получении</div>
+                      <input class="radioblock__input" type="radio" name="payment" value="cash"><div class="payment__image"><img src="images/cash.png" alt=""></div><div class="radioblock__text">Наличными</div>
                     </div>
                   </div>
                 </div>

@@ -51,10 +51,7 @@
         position: relative;
         text-transform: uppercase;
         padding: 10px 0;
-    }
-    
-    li > a {
-        color: #454444;
+        cursor: pointer;
     }
     
     .active {
@@ -78,7 +75,7 @@
     background: #f7f5f3;
     border-radius: 4px;
     top: 35px;
-    
+    z-index: 2;
     li {
         position: relative;
         display: flex;
@@ -107,6 +104,12 @@
             text-decoration: none;
         }
     }
+
+    &--second {
+        top: 0;
+        right: -270px;
+    }
+
 }
 .nav-parent {
     > a:after {
@@ -130,13 +133,15 @@
     }
 }
 
-.second-submenu {
-    top: 0;
-    right: -270px;
+
+
+
+
+.category:hover {
+   & > .nav-submenu {
+    display: block;
+   } 
 }
-
-
-
 
 .breadcrumbs {
     display: block;
@@ -182,20 +187,22 @@
 }
 
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 767px) {
 
     .nav-logo {
         position: absolute;
-        top: -12px;
+        top: 0;
         left: 0;
-        width: 50px;
+        width: 40px;
+        height: 40px;
         background-size: contain;
         
         span {
             font-size: 10px;
         }
     }
-    
+
+
 }
 
 @media all and (max-width: 767px) {
@@ -204,11 +211,45 @@
         width: 100%;
         height: 40px;
         justify-content: flex-end;
+
+        position: relative;
     }
     
     .nav-list {
         display: none;
+        padding: 15px 0;
+        &--active {
+
+            display: block;
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 40px;
+            margin:auto;
+
+            background-color: #454444;
+            
+            li,li.active {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            
+            li.active {
+                border-radius: 0;
+            }
+
+            li:hover {
+                background: #98cb13;
+            }
+            a {
+                color:#ffffff;
+            }
+        }
     }
+
+
+
     
     .nav-burger {
         display: flex;
@@ -223,6 +264,18 @@
             height: 4px;
             background: #fff;
         }
+
+        &--green {
+            span {
+                background-color: #bada00;
+            }
+        }
+    }
+
+    .category:hover {
+       & > .nav-submenu {
+        display: none;
+       } 
     }
 }
 

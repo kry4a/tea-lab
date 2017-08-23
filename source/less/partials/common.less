@@ -19,6 +19,13 @@ a {
     transition: all .3s;
 }
 
+.link {
+    color:#454444;
+    &--white {
+        color:#ffffff;
+    }
+}
+
 h2 {
     font-size: 28px;
     color: #454444;
@@ -39,6 +46,15 @@ input[type="checkbox"], input[type="radio"] {
     margin: 0;
     vertical-align: top;
 }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    outline: none;
+}
+
 .price {
     position: relative; 
     margin-right: 25px;
@@ -60,7 +76,7 @@ input[type="checkbox"], input[type="radio"] {
             background-repeat: no-repeat;
             width: 12px;
             height: 13px;
-            right: -15px;
+            right: -17px;
             top: 4px;
         }
     }

@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    
+    $('.nav-burger').click(function(e){
+        var menu = $(this).data("menu");
+        if (menu) {
+            $('#'+menu).toggleClass("nav-list--active");
+        }
+    });
+
     $('.select').not('.select__item').click(function(){
         $(this).toggleClass('select--opened');
     });
@@ -21,33 +29,7 @@ $(document).ready(function() {
         e.stopPropagation();
         $(".search-input").css({width: "0", opacity: "0",  "z-index": "-1"});
     });
-    
-    $(".category, .nav-burger").hover( function (e) {
-        e.stopPropagation();
-        $(".category-submenu").css({display: "block"});
-    },
-    function (e) {
-        e.stopPropagation();
-        $(".category-submenu").css({display: "none"});
-    });
-    
-    $(".category1").hover( function (e) {
         
-        $(".category1-sub").css({display: "block"});
-    },
-    function (e) {
-        
-        $(".category1-sub").css({display: "none"});
-    });
-    
-    $(".category2").hover( function (e) {
-        
-        $(".category2-sub").css({display: "block"});
-    },
-    function (e) {
-        
-        $(".category2-sub").css({display: "none"});
-    });
     
     var swiper = new Swiper('.tea-container', {
         pagination: '.swiper-pagination',
