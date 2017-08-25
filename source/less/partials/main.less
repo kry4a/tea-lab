@@ -466,7 +466,171 @@
       min-width: auto;
     }
   }
+}
+
+
+.good {
+  &__title {
+    color:#bada00;
+    font-weight: bold;
+    font-size:18px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size:16px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  
+
+  &__image {
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__reviews {
+    margin-bottom: 30px;
+  }
+  
+  &__price {
+    margin-bottom: 15px;
+    font-size:16px;
+  }
+
+}
+
+.btn {
+  &__cart {
+    display: block;
+
+    color:#bada00;
+    border: 2px solid #bada00;
+    width: 100%;
+
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    
+    transition: box-shadow .3s ease;
+    box-shadow: none;
+    &:hover {
+      color:#bada00;
+      box-shadow: 0 6px 12px 0 rgba(51,51,51,.25)
+    }
+  }
+}
+
+.desc {
+  margin-bottom: 30px;
+  &__title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  &__attrs {
+    margin-bottom: 15px;
+  }
+
+}
+
+.attrs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  &__item {
+    display: inline-block;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+
+.review {
+  border-bottom: 1px solid #e6e8eb;
+  padding:15px 0;
+
+  margin-bottom: 30px;
+  
+  &__title,&__date {
+    margin-bottom: 15px;
+    font-size:16px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.75;
+    text-align: justify;
+  }
+
+  
+}
+
+.infoblock {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &__title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+}
+
+.related {
+  &__title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 15px;
+    text-transform: uppercase; 
+  }
+}
+
+.no-border {
+  border:none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
 
 
 
+.cook {
+  font-size: 14px;
+  height: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+@media all and (max-width: 450px) {
+  .attrs {
+    display: block;
+    &__item {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
 }
