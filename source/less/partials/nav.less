@@ -47,24 +47,27 @@
     align-items: center;
     width: 100%;
     
-    > li {
+
+    &__item {
         position: relative;
         text-transform: uppercase;
-        padding: 10px 0;
-        cursor: pointer;
-    }
-    
-    .active {
-        background: #98cb13;
-        border-radius: 20px;
-        padding: 10px 20px;
         
-        > a {
-            color:#ffffff;
-            font-weight: 600;
-            &:hover {
-                text-decoration: none;
-            }
+        cursor: pointer;
+        white-space: nowrap;
+        margin-right: 5px;
+
+        &--active,&:hover {
+            background: #98cb13;
+            border-radius: 20px;
+        }
+    
+        a {
+            display: block;
+            padding: 10px 20px; 
+            text-decoration: none;
+        }
+        &--category {
+
         }
     }
 }
