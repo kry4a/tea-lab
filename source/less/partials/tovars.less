@@ -73,16 +73,6 @@
         position: relative;
         
         margin-top: auto;
-        
-        &:after {
-            position: absolute;
-            content: url(../images/basket2.png);
-            top: 5px;
-            width: 27px;
-            left: 0;
-            right: 0;
-            margin:auto;
-        }
     }
     
     &__price {
@@ -113,6 +103,21 @@
         }
     }
     
+    &__btn {
+        width: 27px;
+        height: 24px;
+        position: absolute;
+        background-image: url(../images/basket2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #ffffff;
+        top: 5px;
+        left: 0;
+        right: 0;
+        margin:auto;
+        border: none;
+        cursor:pointer;
+    }
     .goods-sel {
         margin:0;
         width: 90px;
@@ -156,3 +161,4 @@
         text-align: center;
     }
 }
+
