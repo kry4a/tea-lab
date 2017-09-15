@@ -1,11 +1,8 @@
-header {
-    padding-top: 55px;
-}
 .header {
 
     position: fixed;
     top:0;
-    z-index: 3;
+    z-index: 999;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -13,7 +10,6 @@ header {
     width: 100%;
     height: 55px;
     
-
     &__left, &__right, &__city, &__phone {
         display: flex;
         flex-direction: row; 
@@ -21,7 +17,7 @@ header {
     }
     &__left {
         justify-content: space-between;
-        width: 60%;
+        width: 55%;
     }
     &__right {
         position: relative;
@@ -54,7 +50,6 @@ header {
         }
     }
     &__phone {
-        margin-left: -60px;
         &:before {
             position: absolute;
             content: url(../images/phone-receiver.png);
