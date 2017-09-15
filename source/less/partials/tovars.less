@@ -19,6 +19,7 @@
     
     margin-bottom: 30px;
     &__image {
+        position: relative;
         overflow:hidden;
         margin-bottom: 17px;
         margin-left: -22px;
@@ -26,7 +27,55 @@
         img {
             display: block;
             width: 100%;
-        }    
+        }   
+        
+        .border {
+            display: block;
+            height: 100%;
+            width: 100%;
+            
+            position: absolute;
+            
+            &--left {
+                bottom: -50%;
+                left: -50%;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    background-color: #ffffff;
+                    padding-bottom: 50%;
+                    width: 100%;
+                    z-index: 333;
+                    
+                    transform-origin: 0 0;
+                    transform: rotate(30deg) skewX(30deg) translate(15.5%,-100%);
+                    border-top: 10px solid #A1BC10;
+                }
+            }
+            &--right {
+                bottom: -50%;
+                right: -50%;
+
+                
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    background-color: #ffffff;
+                    padding-bottom: 50%;
+                    width: 100%;
+                    z-index: 333;
+                    
+                    transform-origin: 0 0;
+                    transform: rotate(-30deg) skewX(-30deg) translate(-0.5%,-8%);
+                    border-top: 10px solid #A1BC10;
+                }
+            }
+        }
     }
     
     &__desc {
