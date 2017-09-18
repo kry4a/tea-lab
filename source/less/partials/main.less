@@ -20,6 +20,11 @@
   padding-bottom: 45px;
   position: relative;
   margin-bottom: 30px;
+
+  &--bl {
+    margin-bottom: 0;
+    color: #504444
+  }
 }
 
 .page-text {
@@ -853,5 +858,161 @@
     line-height: 40px;
     padding: 0 25px;
     border-radius: 20px
+  }
+}
+
+
+
+.horeca {
+  padding-bottom: 45px;
+  margin-bottom: 30px;
+  
+  &--info {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 30px;
+  }
+  &--bg {
+    background-image: url('../images/horeca_bg.jpg');
+    background-size: cover;
+  }
+
+  &--bt {
+    border-bottom: 1px solid #e6e8eb;  
+  }
+  
+  &__title {
+    color:#bada00;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__block {
+    /*display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;*/
+  }
+
+  &__item {
+    padding-left: 50px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+    min-height: 40px;
+    &::before {
+      content:"";
+      
+      position: absolute;
+      left: 0;
+
+      width: 35px;
+      height: 35px;
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--cup::before {
+      background-image: url('../images/teacup.png');
+    }
+    &--tools::before {
+      background-image: url('../images/tools.png');
+    }
+    &--bag::before {
+      background-image: url('../images/bag.png');
+    }
+    &--staff::before {
+      background-image: url('../images/staff.png');
+    }
+    &--map::before {
+      background-image: url('../images/map.png');
+    }
+    &--graph::before {
+      background-image: url('../images/graph.png');
+    }
+    &--teapot::before {
+      background-image: url('../images/teapot.png');
+    }
+    &--grade::before {
+      background-image: url('../images/grade.png');
+    }
+    &--camera::before {
+      background-image: url('../images/camera.png');
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    overflow: hidden;
+    text-align: center;
+    img {
+      display: inline-block !important;
+    }
+  }
+
+  &__infotitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__contacts {
+    color:#898989;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    span {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.list {
+  &--dotted {
+    padding-left: 30px;
+    list-style: disc;
+
+
+    li {
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.partner {
+  text-align: center;
+  &__image {
+    margin-bottom: 30px;
+
+    img {
+      display: inline-block;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
   }
 }

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  @@include('include/head.html')
+</head>
+<body>
+  <div class="content-wrap">
+     <header>
+      <div class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header__left">
+              <div class="header__city header__city--green">
+                <span>Ваш город: </span>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="divue" aria-expanded="false"> Москва <span class="caret caret--green"></span> </a>
+                  <ul class="dropdown-menu" aria-labelledby="drop1"> 
+                  <li><a href="#">Санкт-Петербург</a></li> 
+                  <li><a href="#">Екатеринбург</a>
+                  </li> 
+                  <li><a href="#">Владивосток</a></li> 
+                </ul>
+                </div>  
+              </div>
+              <div class="header__phone header__phone--green">
+                <span>Звоните нам: </span>
+                <a href="">8 800 88 800 88</a>
+              </div>
+              <div class="header__social">
+                <a href=""><img src="images/tw-green.png" alt="twitter"></a>
+                <a href=""><img src="images/vk-green.png" alt="vkontakte"></a>
+                <a href=""><img src="images/fb-green.png" alt="facebook"></a>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__search">
+                <i class="icon--search-green"></i>
+                <div class="search-input">
+                  <input type="text" class="form-condivol" placeholder="Найти.." aria-describedby="basic-addon1">
+                  <span class="search-close glyphicon glyphicon-remove"></span>
+                </div>
+              </div>
+              <div class="header__login">
+                <a href="login.html">Войти</a>
+                <span>и получить скидку</span>
+              </div>
+              <a href="cart.html" class="header__cart header__cart--green">
+                <span>99</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav nav--dark container">
+        <a href="index.html" class="nav-logo nav-logo--green"><span>TEA</span><span>LAB</span></a>
+        <ul class="nav-list">
+          <li><a class="link" href="index.html">Главная</a></li>
+          <li class="category"><a class="link" href="catalog.html">Каталог</a>
+            <ul class="nav-submenu category-submenu">
+              <li class="nav-parent category1"><a href="catalog.html">Жасминовый чай</a>
+                <ul class="nav-submenu second-submenu category1-sub">
+                  <li><a href="catalog.html">Подпункт 1</a></li>
+                  <li><a href="catalog.html">Подпункт 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-parent category2"><a href="catalog.html">Зелёный чай</a>
+                <ul class="nav-submenu second-submenu category2-sub">
+                  <li><a href="catalog.html">Подпункт 1</a></li>
+                  <li><a href="catalog.html">Подпункт 2</a></li>
+                </ul>
+              </li>
+              <li><a href="catalog.html">Связанный чай</a></li>
+              <li><a href="catalog.html">Белый чай</a></li>
+              <li><a href="catalog.html">Желтый чай</a></li>
+              <li><a href="catalog.html">Чёрный чай</a></li>
+              <li><a href="catalog.html">Улуны</a></li>
+              <li><a href="catalog.html">Пуэры</a></li>
+              <li><a href="catalog.html">Прочие</a></li>
+              <li><a href="catalog.html">Кофе</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="catalog.html">Посуда</a></li>
+          <li class="active"><a class="link" href="shares.html">Акции</a></li>
+          <li><a class="link" href="">Подарки</a></li>
+          <li><a class="link" href="">Новинки</a></li>
+          <li><a class="link" href="">Оптом</a></li>
+          <li><a class="link" href="">О TEALAB</a></li>
+          <li><a class="link" href="">Отзывы</a></li>
+          <li><a class="link" href="">Прочее</a></li>
+        </ul>
+        <div class="nav-burger nav-burger--green">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="horeca horeca--bg horeca--bt">
+      <div class="page-info">
+         <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+            <li class="breadcrumbs__item">Коммерция</li>
+          </ul>
+         </div>
+      </div>
+      <div class="page-subtitle page-subtitle--bl">
+        <div class="container">
+          <h1>Коммерческое предложение</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="horeca__block col-sm-5">
+            <h2 class="horeca__title">Мы предоставляем</h2>
+            <ul class="list list--dotted">
+              <li>Разработанные нами уникальные чайные карты</li>
+              <li>Продвижение и продажа чая</li>
+              <li>Обучение персонала тренерами</li>
+              <li>Обслуживание квалифицированными чайными мастерами</li>
+            </ul>
+            <h2 class="text__title">Получить прайс на почту</h2>
+            <div class="step__content step__content--grey step__content--padded">
+              <div class="input-group">
+                <label class="input-group__label col-4" for="city">E-mail: </label>
+                <input class="input-group__input col-8" value="" placeholder="E-mail" id="city" name="city" type="text"> 
+              </div>
+              <button class="btn btn-green btn--padded">Получить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca">
+      <div class="container">
+        <div class="row">
+          <div class="horeca__block col-sm-6">
+            <h2 class="horeca__title">О нас</h2>
+            <p class="horeca__text">Чайная компания «Лаборатория чая» является поставщиком  коллекционного китайского чая с высоким уровнем сервисного обслуживания и наличием дополнительных услуг.</p>
+            <p class="horeca__text">Миссия: Мы даем людям уверенность и надежность поставляя чай отборного качества. Мы дарим им сервис помогая в продвижении чайной культуры и способствуя увеличению продаж.</p>
+          </div>
+          <div class="horeca__block col-sm-6">
+            <div class="horeca__image">
+              <img src="./images/horeca_1.jpg" class="img-responsive" alt="О нас">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca">
+      <div class="container">
+        <div class="row">
+          <div class="horeca__block col-sm-6">
+            <h2 class="horeca__title">Чайная карта</h2>
+            <p class="horeca__subtitle">«СОЗДАЙ СВОЕ НАСТРОЕНИЕ» - ЭТО ОТДЕЛЬНОЕ МЕНЮ</p>
+            <ul class="list list--dotted">
+              <li class="list__item">Чай оптимально подобранный под кухню вашего заведения</li>
+              <li class="list__item">Оригинальный текст позволяющий с помощью специально подобранных в несколько категорий чаев сформировать желаемое настроение</li>
+            </ul>
+            <div class="horeca__image">
+              <img src="./images/horeca_2.jpg" class="img-responsive" alt="Поставка">
+            </div>
+          </div>
+          <div class="horeca__block col-sm-6">
+            <h2 class="horeca__title">Чайно-кальянная карта</h2>
+            <p class="horeca__subtitle">«СОЗДАЙ СВОЮ АТМОСФЕРУ»</p>
+            <ul class="list list--dotted">
+              <li>Описывает сочетание различных видов и вкусов табака с определенными сортами коллекционного чая;</li>
+              <li>Выбор того или иного сочетания позволяет создать желаемую атмосферу</li>
+            </ul>
+            <div class="horeca__image">
+              <img src="./images/horeca_3.jpg" class="img-responsive" alt="Подряд">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca horeca--bt">
+      <div class="container">
+        <div class="row">
+          <div class="horeca__title"></div>
+          <div class="horeca__block col-sm-6">
+            <p class="horeca__subtitle">Вариант 1 - Поставка</p>
+            <ul class="horeca__list">
+              <li class="horeca__item horeca__item--cup">
+                Поставка чая, посуды и аксессуаров
+              </li>
+              <li class="horeca__item horeca__item--tools">
+                Обучение персонала: проведение тренингов с целью повышения уровня знаний о продукте, его свойствах, вкусе, сочетании с блюдами и кальянами; обучение направлено на повышение продаж чая в заведении.
+              </li>
+            </ul>
+            
+          </div>
+          <div class="horeca__block col-sm-6">
+            <p class="horeca__subtitle">Вариант 2 - Подряд</p>
+            <ul class="horeca__list">
+              <li class="horeca__item horeca__item--bag">Сотруднфичество на партнерских условиях. Прибыль делится согласно оговоренному процентному соотношению. Все расходы на оплату заработной платы сотрудников, оплату оборудования и чая мы берем на себя;</li>
+              <li class="horeca__item horeca__item--staff">Наш сотрудник самостоятельно проводит всю необходимую работу с чаем (правильное заваривание, подача, заказ необходимого оборудования и ингредиентов)</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="horeca__title">Преимущества работы с нами</h2>
+            <ul class="horeca__list">
+              <li class="horeca__item horeca__item--map">Привлечение внимания к заведению как к месту, где можно насладиться Коллекционным чаем и чайными коктейлями, сделанными по уникальной рецептуре, от которых клиент получает удовольствие, физическое и эмоциональное состояние меняется в лучшую сторону.</li>
+              <li class="horeca__item horeca__item--graph">Увеличение чистой прибыли, за счет поднятия среднего чека за чайник чая при отсутствии каких-либо финансовых затрат, начальных и текущих.</li>
+              <li class="horeca__item horeca__item--teapot">Мы предоставляем качественное и эстетически красивое оборудование для чаепития.</li>
+              <li class="horeca__item horeca__item--grade">Своя школа чайных мастеров, где мы за свои средства обучаем их правильному завариванию, подаче и работе с клиентами;</li>
+              <li class="horeca__item horeca__item--camera">Обучающие тренинги для персонала, направленные на повышение качества обслуживания и увеличение продаж.</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <div class="horeca__image">
+              <img src="./images/horeca_1.jpg" class="img-responsive" alt="Преимущества работы с нами">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca">
+      <div class="container">
+        <div class="row">
+          <h2 class="horeca__title">Наши партнеры</h2>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+          <div class="partner col-sm-2">
+            <div class="partner__image">
+              <img class="img-responsive" src="https://place-hold.it/150x150" alt="Название компани">
+            </div>
+            <div class="partner__title">Название компании</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="horeca horeca--info">
+      <div class="container">
+        <p class="horeca__infotitle">
+          Представитель ОАО «Лаборатория чая»
+        </p>
+        <p class="horeca__contacts"><span>Минаев Алексей</span><span>+7 963 76 952 53</span><span>tealaboratory@mail.ru</span>
+        </p>
+      </div>
+    </div>
+    <div class="horeca horeca--map">
+      <div id="map"></div>
+    </div>
+  </div>
+  @@include('include/footer.html')
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootsdivapcdn.com/bootsdivap/3.3.7/js/bootsdivap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
