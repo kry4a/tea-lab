@@ -134,12 +134,10 @@
                 <h3 class="step__title step__title--second">
                   Способ доставки в город
                 </h3>
-                <div class="step__content step__content--grey">
-                  <div class="input-group">
-                    <div class="radioblock">
-                      <input class="radioblock__input" type="radio" name="shipping" value="courier"><div class="radioblock__text">Доставка курьером от <span class="price price--black">356</span></div>
-                    </div>
+                <div class="shipping__method method__method method__method--active method__method--nb" data-shipping-code="courier">
+                    <div class="method__text">Доставка курьером <span class="price price--black">350</span></div>
                   </div>
+                <div class="step__content step__content--lighten" data-shipping-code="courier">
                   <div class="input-group">
                     <label class="input-group__label col-4" for="city">Город: </label>
                     <input class="input-group__input col-8" value="" placeholder="Город" id="city" name="city" type="text"> 
@@ -165,13 +163,11 @@
                     <input class="input-group__input col-8" value="" placeholder="Дата доставки" id="date" name="date" type="text"> 
                   </div>  
                 </div>
-                <div class="step__content step__content--grey">
-                  <div class="input-group">
-                    <div class="radioblock">
-                      <input class="radioblock__input" type="radio" name="shipping" value="pickup"><div class="radioblock__text">До пункта выдачи <span class="price price--black">125</span></div>
-                    </div>
-                  </div>
-
+                
+                <div class="shipping__method method__method method__method--nb" data-shipping-code="pickup">
+                  <div class="method__text">До пункта выдачи <span class="price price--black">149</span></div>
+                </div>
+                <div class="step__content step__content--grey" data-shipping-code="pickup">
                   <p>Планируемая дата доставки: 2017.08.11.</p>
                   <p>Стоимость: <span class="price price--black">125</span></p>
                   <p><b>Адрес:</b> г. Москва,</p>
@@ -183,21 +179,16 @@
                 <h3 class="step__title step__title--third">
                   Способ оплаты
                 </h3>
-                <div class="payment">
-                  <div class="payment__method payment__method--active" data-payment-code="visa">
-                    <div class="radioblock">
-                      <input class="radioblock__input" checked="checked" type="radio" name="payment" value="visa"><div class="payment__image"><img src="images/visa.png" alt=""></div><div class="radioblock__text">Оплата картой</div>
-                    </div>
-                  </div>
-                  <div class="payment__method" data-payment-code="yandex">
-                    <div class="radioblock">
-                      <input class="radioblock__input" type="radio" name="payment" value="yandex"><div class="payment__image"><img src="images/yandex.png" alt=""></div><div class="radioblock__text">Яндекс.Деньги</div>
-                    </div>
-                  </div>
-                  <div class="payment__method" data-payment-code="cash">
-                    <div class="radioblock">
-                      <input class="radioblock__input" type="radio" name="payment" value="cash"><div class="payment__image"><img src="images/cash.png" alt=""></div><div class="radioblock__text">Наличными</div>
-                    </div>
+                <div class="method">
+                  <div class="payment__method method__method method__method--active" data-payment-code="visa">
+                    <div class="method__image"><img src="images/visa.png" alt=""></div>
+                    <div class="method__text">Оплата картой</div>
+                  </div><div class="payment__method method__method" data-payment-code="yandex">
+                    <div class="method__image"><img src="images/yandex.png" alt=""></div>
+                    <div class="method__text">Яндекс.Деньги</div>
+                  </div><div class="payment__method method__method" data-payment-code="cash">
+                    <div class="method__image"><img src="images/cash.png" alt=""></div>
+                    <div class="method__text">Наличными</div>
                   </div>
                 </div>
               </div>
