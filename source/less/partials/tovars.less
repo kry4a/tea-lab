@@ -1,6 +1,5 @@
 .form-wrap {
     display: flex;
-    margin-bottom: 30px;
     
     .form-control {
         margin-right: 10px;
@@ -93,7 +92,9 @@
         font-weight: 600;
         text-align: center;
         margin-bottom: 10px;
-
+        
+        display: block;
+        min-height: 40px;
         &:hover {
             color: #A1BC10;
         }
@@ -222,3 +223,50 @@
     }
 }
 
+
+
+.pagin {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    &__inner {
+        display: inline-block;
+        list-style: none;
+        padding: 0 15px;
+    }
+    &__item { 
+        border: 1px solid #ddd;
+        margin-left: -1px;
+        display: inline-block;
+        text-align: center;
+        
+        &--active, &:hover {
+            background-color: #BADA00;  
+
+            .pagin__link, span {
+                color:#ffffff;
+            }
+        }
+
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+    &__link, span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        line-height: 1.42857143;
+        text-decoration: none;
+       
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+}

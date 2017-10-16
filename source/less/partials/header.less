@@ -34,6 +34,7 @@
         
     }
     &__city {
+        cursor: pointer;
         &:before {
             position: absolute;
             content: url(../images/geo.png);
@@ -42,6 +43,11 @@
             left: -18px;
             top: -3px;
         }
+        &:hover {
+            &:before {
+                content: url(../images/geo-green.png);
+            }
+        }
     }
 
     &__city--green {
@@ -49,7 +55,9 @@
             content: url(../images/geo-green.png);
         }
     }
+   
     &__phone {
+        cursor:pointer;
         &:before {
             position: absolute;
             content: url(../images/phone-receiver.png);
@@ -58,7 +66,18 @@
             left: -25px;
             top: -1px;
         }
+
+        &:hover {
+            &:before {
+                content: url(../images/phone-green.png);
+            }
+            a {
+                color:#98CB13;
+            }
+        }
     }
+
+
     &__phone--green {
         &:before {
             content: url(../images/phone-green.png);
@@ -70,6 +89,66 @@
         justify-content: space-between;
     }
     
+    .social {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &--tw {
+            background-image: url('../images/tw.png');
+            &:hover {
+                background-image: url('../images/tw-green.png');
+            }
+        }
+
+        &--vk {
+            background-image: url('../images/vk.png');
+            &:hover {
+                background-image: url('../images/vk-green.png');
+            }
+
+        }
+        &--fb {
+            background-image: url('../images/fb.png');
+            &:hover {
+                background-image: url('../images/fb-green.png');
+            }
+        }
+    }
+
+    .social-green {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &--tw {
+            background-image: url('../images/tw-green.png');
+            &:hover {
+                background-image: url('../images/tw-green.png');
+            }
+        }
+
+        &--vk {
+            background-image: url('../images/vk-green.png');
+            &:hover {
+                background-image: url('../images/vk-green.png');
+            }
+
+        }
+        &--fb {
+            background-image: url('../images/fb-green.png');
+            &:hover {
+                background-image: url('../images/fb-green.png');
+            }
+        }
+    }
+
     &__search {
         display: flex;
         align-items: center;
@@ -96,6 +175,13 @@
     
     &__login {
         margin-left: 16px;
+
+       
+        a {
+            &:hover {
+                color:#98CB13;
+            }
+        }
     }
     
     &__cart {
@@ -106,6 +192,9 @@
         margin-left: 38px;
         margin-right: 10px;
         
+        &:hover {
+            background: url(../images/basket-green.png) center no-repeat;
+        }
         &--green {
             background: url(../images/basket-green.png) center no-repeat;
         }
