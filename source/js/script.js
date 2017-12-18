@@ -30,58 +30,71 @@ $(document).ready(function() {
         $(".search-input").css({width: "0", opacity: "0",  "z-index": "-1"});
     });
         
+    if ($('.im--phone').length) {
+        console.log('im--phone');
+        $('.im--phone').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+    } else {
+            console.log('no im--phone');
+    }
+
+    if ($('.tea-container').length) {
+        var swiper = new Swiper('.tea-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });    
+    }
+
     
-    var swiper = new Swiper('.tea-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30
-    });
-    
-    var swiper2 = new Swiper('.feedbacks-container', {
-        slidesPerView: 4,
-        pagination: '.swiper-pagination',
-        spaceBetween: 25,
-        breakpoints: {
-         
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            450: {
-                slidesPerView: 1,
-                spaceBetween: 10
+    if ($('.feedbacks-container').length) {
+        var swiper2 = new Swiper('.feedbacks-container', {
+            slidesPerView: 4,
+            pagination: '.swiper-pagination',
+            spaceBetween: 25,
+            breakpoints: {
+             
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                450: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
             }
-        }
-    });
+        });
+    }
     
-    var swiper3 = new Swiper('.partners-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 4,
-        paginationClickable: true,
-        spaceBetween: 30,
-        breakpoints: {
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            450: {
-                slidesPerView: 1,
-                spaceBetween: 10
+    if ($('.partners-container').length) {
+        var swiper3 = new Swiper('.partners-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 4,
+            paginationClickable: true,
+            spaceBetween: 30,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                450: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
             }
-        }
-    });
-    
+        });
+    }
+
     $('.btn-morning').click(swiper,function(e){
         e.preventDefault();
         swiper.slideTo(0);
@@ -124,4 +137,7 @@ $(document).ready(function() {
     $('[data-toggle-action]').each(function(){
         $(this).superToggle($(this).data('toggle-action'));
     });
+
+
+    
 });
