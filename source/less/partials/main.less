@@ -41,6 +41,9 @@
   }
 }
 
+.page-content {
+  margin-bottom: 30px;
+}
 
 .cart {
   margin-bottom: 60px;
@@ -70,7 +73,7 @@
     display: block;
     font-weight: bold;
     color:#bada00;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 
     &__price {
       font-size: 16px;
@@ -1102,5 +1105,33 @@
   &__title {
     font-size: 14px;
     text-transform: uppercase;
+  }
+}
+
+.contacts {
+  &__address {
+    &:before {
+      position: absolute;
+      content: url(../images/geo_footer.png);
+      width: 20px;
+      height: 30px;
+      left: -45px;
+      top: 4px;
+    }
+    strong {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  &__phone {
+    &:before {
+      position: absolute;
+      content: url(../images/phone-receiver_footer.png);
+      width: 25px;
+      height: 25px;
+      left: -45px;
+      top: 7px;
+    }
   }
 }

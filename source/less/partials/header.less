@@ -308,8 +308,21 @@
 }
 
 @media all and (max-width: 767px) {
-    .header__social {
+    .header__social, .header__phone {
         position: absolute;
-        top: 115px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .header__social {
+        top:115px;
+    }
+
+    .header__left {
+        margin: 0;
+    }
+
+    .header {
+        display: block;
     }
 }
